@@ -8,7 +8,7 @@ const particleParams = {
       "value": 355,
       "density": {
         "enable": true,
-        "value_area": 789.1476416322727
+        "value_area": 500
       }
     },
     "color": {
@@ -30,17 +30,17 @@ const particleParams = {
       }
     },
     "opacity": {
-      "value": 0.48927153781200905,
+      "value": 0.6,
       "random": false,
       "anim": {
         "enable": true,
-        "speed": 0.2,
+        "speed": 0.5,
         "opacity_min": 0,
         "sync": false
       }
     },
     "size": {
-      "value": 2,
+      "value": 2.5,
       "random": true,
       "anim": {
         "enable": true,
@@ -50,11 +50,7 @@ const particleParams = {
       }
     },
     "line_linked": {
-      "enable": false,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
+      "enable": false
     },
     "move": {
       "enable": true,
@@ -78,10 +74,6 @@ const particleParams = {
         "enable": true,
         "mode": "bubble"
       },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
       "resize": true
     },
     "modes": {
@@ -92,8 +84,8 @@ const particleParams = {
         }
       },
       "bubble": {
-        "distance": 83.91608391608392,
-        "size": 1,
+        "distance": 100,
+        "size": 2,
         "duration": 3,
         "opacity": 1,
         "speed": 3
