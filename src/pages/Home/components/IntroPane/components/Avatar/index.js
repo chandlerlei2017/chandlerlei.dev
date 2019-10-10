@@ -5,7 +5,7 @@ import avatarImage from '../../../../../../images/avatar.jpg';
 function Avatar() {
   return(
     <div className="image-cropper">
-      <img src={avatarImage} alt="avatar" class="profile-pic"/>
+      <img src={avatarImage} alt="avatar" className="profile-pic"/>
     </div>
   );
 }

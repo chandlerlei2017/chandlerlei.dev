@@ -8,10 +8,11 @@ class HomePage extends React.PureComponent {
 
   render () {
     return(
-      <React.Fragment>
+      <div className="home">
         <Particle/>
         <IntroPane/>
-      </React.Fragment>
+        <div style={{"height": "5000px"}}/>
+      </div>
     );
   }
 }
