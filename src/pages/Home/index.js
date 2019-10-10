@@ -1,6 +1,8 @@
 import React from 'react';
 import Particle from './components/Particle/index'
 import IntroPane from './components/IntroPane/index'
+import AboutView from './components/About/index'
+
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
 
@@ -14,10 +16,10 @@ class HomePage extends React.PureComponent {
         <div className="home p-5">
           <Particle/>
 
-          {/* <Parallax y={[2, -20]} > */}
-            <IntroPane/>
-            <div style={{"height": "5000px"}}/>
-          {/* </Parallax> */}
+          <IntroPane/>
+          <AboutView/>
+
+          <div style={{"height": "5000px"}}/>
         </div>
       </ParallaxProvider>
     );
