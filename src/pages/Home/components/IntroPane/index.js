@@ -1,13 +1,20 @@
 import React from 'react';
 import './index.css'
 import Avatar from './components/Avatar/index'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMusic } from '@fortawesome/free-solid-svg-icons'
 
 class IntroPane extends React.PureComponent {
   render() {
     return(
       <div className="intro">
         <Avatar/>
-        <h1>Chandler Lei</h1>
+        <h1 className="mt-5">Chandler Lei - Developer</h1>
+        <h2 className="mt-5">
+          <FontAwesomeIcon icon={faMusic} />
+          { } Starry, starry night - Paint your palette blue and grey { }
+          <FontAwesomeIcon icon={faMusic} />
+        </h2>
       </div>
     );
   }
