@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css'
 import Avatar from './components/Avatar/index'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMusic } from '@fortawesome/free-solid-svg-icons'
+import { faMusic, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 class IntroPane extends React.PureComponent {
   render() {
@@ -10,11 +10,12 @@ class IntroPane extends React.PureComponent {
       <div className="intro">
         <Avatar/>
         <h1 className="mt-5">Chandler Lei - Developer</h1>
-        <h2 className="mt-5">
+        <h2 className="mt-5 mb-5">
           <FontAwesomeIcon icon={faMusic} />
           { } Starry, starry night - Paint your palette blue and grey { }
           <FontAwesomeIcon icon={faMusic} />
         </h2>
+        <FontAwesomeIcon icon={faAngleDown} size="4x"/>
       </div>
     );
   }
