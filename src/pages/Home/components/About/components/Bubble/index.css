@@ -1,0 +1,16 @@
+.bubble {
+  background: #373737;
+  border-radius: 50px;
+}
+
+.bubble h5 :last-child {
+  margin-bottom: 0rem;
+}
+
+.bubble h5 :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.bubble h5 {
+  margin-bottom: 0;
+}
