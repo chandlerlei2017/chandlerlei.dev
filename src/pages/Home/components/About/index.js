@@ -18,10 +18,10 @@ class AboutView extends React.PureComponent {
 
     return (
       <div className="row mt-5">
-        <div className="col-sm-1 offset-sm-2" align="right">
+        <div className="col-2 col-sm-1 offset-sm-2" align="right">
           <Avatar styles={styles} />
         </div>
-        <div className="col-sm-6">
+        <div className="col-10 col-sm-6">
           <Bubble>Hey, I'm Chandler! </Bubble>
           <Bubble>Thanks for visiting my website!</Bubble>
           <Bubble>I am currently in 3rd year, studying Computer Engineering at the University of Waterloo</Bubble>
