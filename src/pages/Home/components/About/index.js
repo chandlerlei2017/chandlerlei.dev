@@ -21,7 +21,7 @@ class AboutView extends React.PureComponent {
         <div className="col-sm-1 offset-sm-2" align="right">
           <Avatar styles={styles} />
         </div>
-        <div className="col-sm-7">
+        <div className="col-sm-6">
           <Bubble>Hey, I'm Chandler! </Bubble>
           <Bubble>Thanks for visiting my website!</Bubble>
           <Bubble>I am currently in 3rd year, studying Computer Engineering at the University of Waterloo</Bubble>
@@ -34,11 +34,9 @@ class AboutView extends React.PureComponent {
           </Bubble>
           <Bubble>
             <p>Great! Now you know a bit about me.</p>
-            <p>Hopefully you don't hate me for my hawaiian pizza comment</p>
           </Bubble>
-          <Bubble>
-            Here's why you should hire me! (If you are an employer or recruiter)
-          </Bubble>
+          <Bubble>And hopefully you don't hate me for my hawaiian pizza comment 😅 </Bubble>
+          <Bubble>Anyway, Here's a bit more about what I do...</Bubble>
         </div>
       </div>
     );
