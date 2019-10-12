@@ -4,8 +4,23 @@ import Bubble from './components/Bubble/index'
 import Avatar from '../../../../shared/Avatar/index'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
+import ScrollMagic from 'scrollmagic'
 
 class AboutView extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.controller = new ScrollMagic.Controller();
+  }
+
+  componentDidMount() {
+    new ScrollMagic.Scene({
+      triggerElement: "#animate-1",
+      duration: 400,
+    })
+    .setPin("#animate-1")
+    .addTo(this.controller);
+  }
+
   render() {
     const styles = {
       height: "56px",
@@ -17,12 +32,14 @@ class AboutView extends React.PureComponent {
     }
 
     return (
+      <>
+      <div id="animate-0"></div>
       <div className="row mt-5">
         <div className="col-2 col-sm-1 offset-sm-2" align="right">
           <Avatar styles={styles} />
         </div>
         <div className="col-10 col-sm-6">
-          <Bubble>Hey, I'm Chandler! </Bubble>
+          <Bubble id="animate-1">Hey, I'm Chandler! </Bubble>
           <Bubble>Thanks for visiting my website!</Bubble>
           <Bubble>I am currently in 3rd year, studying Computer Engineering at the University of Waterloo</Bubble>
           <Bubble>
@@ -39,6 +56,7 @@ class AboutView extends React.PureComponent {
           <Bubble>Anyway, Here's a bit more about what I do...</Bubble>
         </div>
       </div>
+      </>
     );
   }
 }

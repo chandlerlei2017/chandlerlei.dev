@@ -3,7 +3,7 @@ import './index.css'
 import Avatar from '../../../../shared/Avatar/index'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMusic, faAngleDown } from '@fortawesome/free-solid-svg-icons'
-import anime from 'animejs/lib/anime.es.js';
+import anime from 'animejs/lib/anime.es.js'
 
 class IntroPane extends React.PureComponent {
   componentDidMount() {
@@ -26,6 +26,7 @@ class IntroPane extends React.PureComponent {
       opacity: [0, 100],
     }, 600); // absolute offset
   }
+
 
   render() {
     return (

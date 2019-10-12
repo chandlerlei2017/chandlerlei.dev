@@ -18,8 +18,6 @@ class HomePage extends React.PureComponent {
 
           <IntroPane/>
           <AboutView/>
-
-          <div style={{"height": "5000px"}}/>
         </div>
       </ParallaxProvider>
     );
