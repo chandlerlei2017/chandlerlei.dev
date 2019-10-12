@@ -4,6 +4,7 @@ import AnimatedBubble from '../../../../../../shared/AnimatedBubble/index'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltRight} from '@fortawesome/free-solid-svg-icons'
 import ScrollMagic from 'scrollmagic'
+import anime from 'animejs/lib/anime.es';
 
 class AnimationContainer extends React.PureComponent {
   constructor(props) {
@@ -35,6 +36,7 @@ class AnimationContainer extends React.PureComponent {
     new ScrollMagic.Scene({
       triggerElement: "#trigger1",
       duration: 200,
+
     })
     .setPin("#bubble1")
     .addTo(this.controller)
@@ -42,10 +44,26 @@ class AnimationContainer extends React.PureComponent {
       if (event.scrollDirection === "FORWARD") {
         this.handleScroll("firstBubble","Hi, I'm Chandler!");
       }
+      else {
+        anime({
+          targets: '#bubble1',
+          opacity: [100, 0],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
+      }
     })
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("firstBubble","");
+      }
+      else {
+        anime({
+          targets: '#bubble1',
+          opacity: [0, 100],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
       }
     });
 
@@ -54,6 +72,7 @@ class AnimationContainer extends React.PureComponent {
     new ScrollMagic.Scene({
       triggerElement: "#trigger2",
       duration: 200,
+
     })
     .setPin("#bubble2")
     .addTo(this.controller)
@@ -61,10 +80,26 @@ class AnimationContainer extends React.PureComponent {
       if (event.scrollDirection === "FORWARD") {
         this.handleScroll("secondBubble","Thanks for visiting my website!");
       }
+      else {
+        anime({
+          targets: '#bubble2',
+          opacity: [100, 0],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
+      }
     })
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("secondBubble","");
+      }
+      else {
+        anime({
+          targets: '#bubble2',
+          opacity: [0, 100],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
       }
     });
 
@@ -80,6 +115,7 @@ class AnimationContainer extends React.PureComponent {
     new ScrollMagic.Scene({
       triggerElement: "#trigger3",
       duration: 200,
+
     })
     .setPin("#bubble3")
     .addTo(this.controller)
@@ -87,10 +123,26 @@ class AnimationContainer extends React.PureComponent {
       if (event.scrollDirection === "FORWARD") {
         this.handleScroll("thirdBubble","I am currently in 3rd year, studying Computer Engineering at the University of Waterloo");
       }
+      else {
+        anime({
+          targets: '#bubble3',
+          opacity: [100, 0],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
+      }
     })
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("thirdBubble","");
+      }
+      else {
+        anime({
+          targets: '#bubble3',
+          opacity: [0, 100],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
       }
     });
 
@@ -120,10 +172,26 @@ class AnimationContainer extends React.PureComponent {
           <FontAwesomeIcon icon={faLongArrowAltRight} />{' '} I don't think pineapples belong on pizza, sorry (not sorry))
         </>);
       }
+      else {
+        anime({
+          targets: '#bubble4',
+          opacity: [100, 0],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
+      }
     })
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("fourthBubble","");
+      }
+      else {
+        anime({
+          targets: '#bubble4',
+          opacity: [0, 100],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
       }
     });
 
@@ -139,6 +207,7 @@ class AnimationContainer extends React.PureComponent {
     new ScrollMagic.Scene({
       triggerElement: "#trigger5",
       duration: 200,
+
     })
     .setPin("#bubble5")
     .addTo(this.controller)
@@ -146,10 +215,26 @@ class AnimationContainer extends React.PureComponent {
       if (event.scrollDirection === "FORWARD") {
         this.handleScroll("fifthBubble","Great! Now you know a bit about me.");
       }
+      else {
+        anime({
+          targets: '#bubble5',
+          opacity: [100, 0],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
+      }
     })
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("fifthBubble","");
+      }
+      else {
+        anime({
+          targets: '#bubble5',
+          opacity: [0, 100],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
       }
     });
 
@@ -165,6 +250,7 @@ class AnimationContainer extends React.PureComponent {
     new ScrollMagic.Scene({
       triggerElement: "#trigger6",
       duration: 200,
+
     })
     .setPin("#bubble6")
     .addTo(this.controller)
@@ -172,10 +258,26 @@ class AnimationContainer extends React.PureComponent {
       if (event.scrollDirection === "FORWARD") {
         this.handleScroll("sixthBubble","And hopefully you don't hate me for my hawaiian pizza comment 😅");
       }
+      else {
+        anime({
+          targets: '#bubble6',
+          opacity: [100, 0],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
+      }
     })
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("sixthBubble","");
+      }
+      else {
+        anime({
+          targets: '#bubble6',
+          opacity: [0, 100],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
       }
     });
 
@@ -191,29 +293,34 @@ class AnimationContainer extends React.PureComponent {
     new ScrollMagic.Scene({
       triggerElement: "#trigger7",
       duration: 200,
+
     })
     .setPin("#bubble7")
     .addTo(this.controller)
     .on("leave", (event) => {
       if (event.scrollDirection === "FORWARD") {
         this.handleScroll("seventhBubble","Anyway, Here's a bit more about what I do...");
-        pin1.removePin();
-        pin2.removePin();
-        pin3.removePin();
-        pin4.removePin();
-        pin5.removePin();
-        pin6.removePin();
+      }
+      else {
+        anime({
+          targets: '#bubble7',
+          opacity: [100, 0],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
       }
     })
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("seventhBubble","");
-        pin1.setPin("#trigger1");
-        pin2.setPin("#trigger2");
-        pin3.setPin("#trigger3");
-        pin4.setPin("#trigger4");
-        pin5.setPin("#trigger5");
-        pin6.setPin("#trigger6");
+      }
+      else {
+        anime({
+          targets: '#bubble7',
+          opacity: [0, 100],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
       }
     });
 
@@ -223,11 +330,47 @@ class AnimationContainer extends React.PureComponent {
     })
     .setPin("#trigger6")
     .addTo(this.controller);
+
+    // End Animation
+
+    new ScrollMagic.Scene({
+      triggerElement: "#trigger8",
+      duration: 1,
+
+    })
+    .addTo(this.controller)
+    .on("leave", (event) => {
+      if (event.scrollDirection === "FORWARD") {
+        anime({
+          targets: '#animate-container',
+          opacity: [100, 0],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
+      }
+    })
+    .on("enter", (event) => {
+      if (event.scrollDirection === "REVERSE") {
+        anime({
+          targets: '#animate-container',
+          opacity: [0, 100],
+          duration: 200,
+          easing: 'easeInOutExpo'
+        });
+      }
+    });
+
+    let pin7 = new ScrollMagic.Scene({
+      triggerElement: "#trigger8",
+      duration: 0,
+    })
+    .setPin("#trigger7")
+    .addTo(this.controller);
   }
 
   render() {
     return(
-      <>
+      <div id="animate-container">
         <div id="trigger1">
           <AnimatedBubble id="bubble1">{this.state.firstBubble}</AnimatedBubble>
         </div>
@@ -249,7 +392,8 @@ class AnimationContainer extends React.PureComponent {
         <div id="trigger7">
           <AnimatedBubble id="bubble7">{this.state.seventhBubble}</AnimatedBubble>
         </div>
-      </>
+        <div id="trigger8"></div>
+      </div>
     );
   }
 }
