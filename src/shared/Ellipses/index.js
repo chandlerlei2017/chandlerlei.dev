@@ -4,9 +4,9 @@ import './index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle} from '@fortawesome/free-solid-svg-icons'
 
-function Ellipses() {
+function Ellipses(props) {
   return(
-    <span><FontAwesomeIcon id="circle-1" icon={faCircle}/> <FontAwesomeIcon id="circle-2" icon={faCircle}/> <FontAwesomeIcon id="circle-3" icon={faCircle}/></span>
+    <span><FontAwesomeIcon id={`${props.id}-1`} icon={faCircle}/> <FontAwesomeIcon id={`${props.id}-2`} icon={faCircle}/> <FontAwesomeIcon id={`${props.id}-3`} icon={faCircle}/></span>
   );
 }
 
