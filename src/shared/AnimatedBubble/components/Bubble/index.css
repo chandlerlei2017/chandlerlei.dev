@@ -1,6 +1,7 @@
 .bubble {
   background: #373737;
   border-radius: 25px;
+  display: inline-block;
 }
 
 .bubble h5:last-child {
