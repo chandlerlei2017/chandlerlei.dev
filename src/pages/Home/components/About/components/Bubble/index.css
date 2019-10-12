@@ -3,11 +3,11 @@
   border-radius: 25px;
 }
 
-.bubble h5 :last-child {
+.bubble h5:last-child {
   margin-bottom: 0rem;
 }
 
-.bubble h5 :not(:last-child) {
+.bubble h5:not(:last-child) {
   margin-bottom: 1rem;
 }
 
