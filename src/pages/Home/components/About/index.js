@@ -23,7 +23,7 @@ class AboutView extends React.PureComponent {
         </div>
         <div className="col-10 col-sm-6">
           <AnimationContainer/>
-          <div style={{height: "2000px"}}/>
+          {/* <div style={{height: "2000px"}}/> */}
         </div>
       </div>
     );

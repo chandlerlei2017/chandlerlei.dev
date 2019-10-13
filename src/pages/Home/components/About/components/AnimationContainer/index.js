@@ -82,7 +82,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble1',
           opacity: [100, 0],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
@@ -101,7 +101,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble1',
           opacity: [0, 100],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
@@ -137,7 +137,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble2',
           opacity: [100, 0],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
@@ -156,7 +156,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble2',
           opacity: [0, 100],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
@@ -198,7 +198,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble3',
           opacity: [100, 0],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
@@ -217,7 +217,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble3',
           opacity: [0, 100],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
@@ -253,7 +253,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble4',
           opacity: [100, 0],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
@@ -272,7 +272,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble4',
           opacity: [0, 100],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
@@ -308,7 +308,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble5',
           opacity: [100, 0],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
@@ -327,7 +327,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble5',
           opacity: [0, 100],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
@@ -363,7 +363,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble6',
           opacity: [100, 0],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
@@ -382,7 +382,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble6',
           opacity: [0, 100],
-          duration: 100,
+          duration: 500,
           easing: 'easeInOutExpo'
         });
       }
