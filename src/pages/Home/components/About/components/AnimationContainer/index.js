@@ -36,7 +36,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger1",
-      duration: 300,
+      duration: 500,
 
     })
     .setPin("#bubble1")
@@ -49,7 +49,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble1',
           opacity: [100, 0],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -62,7 +62,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble1',
           opacity: [0, 100],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -72,7 +72,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger2",
-      duration: 300,
+      duration: 500,
 
     })
     .setPin("#bubble2")
@@ -83,7 +83,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble1',
           opacity: [100, 0],
-          duration: 500,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -91,7 +91,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble2',
           opacity: [100, 0],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -102,7 +102,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble1',
           opacity: [0, 100],
-          duration: 500,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -110,13 +110,13 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble2',
           opacity: [0, 100],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
     });
 
-    let pin1 = new ScrollMagic.Scene({
+    new ScrollMagic.Scene({
       triggerElement: "#trigger2",
       duration: 0,
     })
@@ -127,7 +127,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger3",
-      duration: 300,
+      duration: 500,
 
     })
     .setPin("#bubble3")
@@ -138,7 +138,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble2',
           opacity: [100, 0],
-          duration: 500,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -146,7 +146,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble3',
           opacity: [100, 0],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -157,7 +157,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble2',
           opacity: [0, 100],
-          duration: 500,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -165,13 +165,13 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble3',
           opacity: [0, 100],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
     });
 
-    let pin2 = new ScrollMagic.Scene({
+    new ScrollMagic.Scene({
       triggerElement: "#trigger3",
       duration: 0,
     })
@@ -182,7 +182,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger4",
-      duration: 300,
+      duration: 500,
     })
     .setPin("#bubble4")
     .addTo(this.controller)
@@ -199,7 +199,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble3',
           opacity: [100, 0],
-          duration: 500,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -207,7 +207,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble4',
           opacity: [100, 0],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -218,7 +218,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble3',
           opacity: [0, 100],
-          duration: 500,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -226,13 +226,13 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble4',
           opacity: [0, 100],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
     });
 
-    let pin3 = new ScrollMagic.Scene({
+    new ScrollMagic.Scene({
       triggerElement: "#trigger4",
       duration: 0,
     })
@@ -243,7 +243,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger5",
-      duration: 300,
+      duration: 500,
 
     })
     .setPin("#bubble5")
@@ -254,7 +254,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble4',
           opacity: [100, 0],
-          duration: 500,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -262,7 +262,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble5',
           opacity: [100, 0],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -273,7 +273,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble4',
           opacity: [0, 100],
-          duration: 500,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -281,13 +281,13 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble5',
           opacity: [0, 100],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
     });
 
-    let pin4 = new ScrollMagic.Scene({
+    new ScrollMagic.Scene({
       triggerElement: "#trigger5",
       duration: 0,
     })
@@ -298,7 +298,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger6",
-      duration: 300,
+      duration: 500,
 
     })
     .setPin("#bubble6")
@@ -309,7 +309,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble5',
           opacity: [100, 0],
-          duration: 500,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -317,7 +317,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble6',
           opacity: [100, 0],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -328,7 +328,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble5',
           opacity: [0, 100],
-          duration: 500,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -336,13 +336,13 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble6',
           opacity: [0, 100],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
     });
 
-    let pin5 = new ScrollMagic.Scene({
+    new ScrollMagic.Scene({
       triggerElement: "#trigger6",
       duration: 0,
     })
@@ -353,7 +353,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger7",
-      duration: 300,
+      duration: 500,
 
     })
     .setPin("#bubble7")
@@ -364,7 +364,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble6',
           opacity: [100, 0],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -372,7 +372,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble7',
           opacity: [100, 0],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -383,7 +383,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble6',
           opacity: [0, 100],
-          duration: 500,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
@@ -391,13 +391,13 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble7',
           opacity: [0, 100],
-          duration: 100,
+          duration: 0,
           easing: 'easeInOutExpo'
         });
       }
     });
 
-    let pin6 = new ScrollMagic.Scene({
+    new ScrollMagic.Scene({
       triggerElement: "#trigger7",
       duration: 0,
     })
@@ -408,15 +408,6 @@ class AnimationContainer extends React.PureComponent {
   }
 
   render() {
-    const styles = {
-      height: "56px",
-      width: "56px",
-      position: "absolute",
-      bottom: "0",
-      right: "0",
-      marginBottom: "0.5rem",
-    }
-
     return(
       <>
       <div id="trigger1">
