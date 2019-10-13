@@ -14,7 +14,7 @@ class HomePage extends React.PureComponent {
     return(
       <ParallaxProvider>
         <div className="home p-5">
-          {/* <Particle/> */}
+          <Particle/>
 
           <IntroPane/>
           <AboutView/>

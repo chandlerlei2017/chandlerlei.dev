@@ -35,7 +35,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger1",
-      duration: 200,
+      duration: 300,
 
     })
     .setPin("#bubble1")
@@ -48,7 +48,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble1',
           opacity: [100, 0],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -61,7 +61,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble1',
           opacity: [0, 100],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -71,7 +71,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger2",
-      duration: 200,
+      duration: 300,
 
     })
     .setPin("#bubble2")
@@ -79,12 +79,18 @@ class AnimationContainer extends React.PureComponent {
     .on("leave", (event) => {
       if (event.scrollDirection === "FORWARD") {
         this.handleScroll("secondBubble","Thanks for visiting my website!");
+        anime({
+          targets: '#bubble1',
+          opacity: [100, 0],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble2',
           opacity: [100, 0],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -92,12 +98,18 @@ class AnimationContainer extends React.PureComponent {
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("secondBubble","");
+        anime({
+          targets: '#bubble1',
+          opacity: [0, 100],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble2',
           opacity: [0, 100],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -114,7 +126,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger3",
-      duration: 200,
+      duration: 300,
 
     })
     .setPin("#bubble3")
@@ -122,12 +134,18 @@ class AnimationContainer extends React.PureComponent {
     .on("leave", (event) => {
       if (event.scrollDirection === "FORWARD") {
         this.handleScroll("thirdBubble","I am currently in 3rd year, studying Computer Engineering at the University of Waterloo");
+        anime({
+          targets: '#bubble2',
+          opacity: [100, 0],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble3',
           opacity: [100, 0],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -135,12 +153,18 @@ class AnimationContainer extends React.PureComponent {
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("thirdBubble","");
+        anime({
+          targets: '#bubble2',
+          opacity: [0, 100],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble3',
           opacity: [0, 100],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -157,7 +181,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger4",
-      duration: 200,
+      duration: 300,
     })
     .setPin("#bubble4")
     .addTo(this.controller)
@@ -171,12 +195,18 @@ class AnimationContainer extends React.PureComponent {
           <p> <FontAwesomeIcon icon={faLongArrowAltRight} />{' '} I eat hotdogs and fries without any toppings </p>
           <FontAwesomeIcon icon={faLongArrowAltRight} />{' '} I don't think pineapples belong on pizza, sorry (not sorry))
         </>);
+        anime({
+          targets: '#bubble3',
+          opacity: [100, 0],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble4',
           opacity: [100, 0],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -184,12 +214,18 @@ class AnimationContainer extends React.PureComponent {
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("fourthBubble","");
+        anime({
+          targets: '#bubble3',
+          opacity: [0, 100],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble4',
           opacity: [0, 100],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -206,7 +242,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger5",
-      duration: 200,
+      duration: 300,
 
     })
     .setPin("#bubble5")
@@ -214,12 +250,18 @@ class AnimationContainer extends React.PureComponent {
     .on("leave", (event) => {
       if (event.scrollDirection === "FORWARD") {
         this.handleScroll("fifthBubble","Great! Now you know a bit about me.");
+        anime({
+          targets: '#bubble4',
+          opacity: [100, 0],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble5',
           opacity: [100, 0],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -227,12 +269,18 @@ class AnimationContainer extends React.PureComponent {
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("fifthBubble","");
+        anime({
+          targets: '#bubble4',
+          opacity: [0, 100],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble5',
           opacity: [0, 100],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -249,7 +297,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger6",
-      duration: 200,
+      duration: 300,
 
     })
     .setPin("#bubble6")
@@ -257,12 +305,18 @@ class AnimationContainer extends React.PureComponent {
     .on("leave", (event) => {
       if (event.scrollDirection === "FORWARD") {
         this.handleScroll("sixthBubble","And hopefully you don't hate me for my hawaiian pizza comment 😅");
+        anime({
+          targets: '#bubble5',
+          opacity: [100, 0],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble6',
           opacity: [100, 0],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -270,12 +324,18 @@ class AnimationContainer extends React.PureComponent {
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("sixthBubble","");
+        anime({
+          targets: '#bubble5',
+          opacity: [0, 100],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble6',
           opacity: [0, 100],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -292,7 +352,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger7",
-      duration: 200,
+      duration: 300,
 
     })
     .setPin("#bubble7")
@@ -300,12 +360,18 @@ class AnimationContainer extends React.PureComponent {
     .on("leave", (event) => {
       if (event.scrollDirection === "FORWARD") {
         this.handleScroll("seventhBubble","Anyway, Here's a bit more about what I do...");
+        anime({
+          targets: '#bubble6',
+          opacity: [100, 0],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble7',
           opacity: [100, 0],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -313,12 +379,18 @@ class AnimationContainer extends React.PureComponent {
     .on("enter", (event) => {
       if (event.scrollDirection === "REVERSE") {
         this.handleScroll("seventhBubble","");
+        anime({
+          targets: '#bubble6',
+          opacity: [0, 100],
+          duration: 100,
+          easing: 'easeInOutExpo'
+        });
       }
       else {
         anime({
           targets: '#bubble7',
           opacity: [0, 100],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -335,8 +407,7 @@ class AnimationContainer extends React.PureComponent {
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger8",
-      duration: 1,
-
+      duration: 300,
     })
     .addTo(this.controller)
     .on("leave", (event) => {
@@ -344,7 +415,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#animate-container',
           opacity: [100, 0],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -354,7 +425,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#animate-container',
           opacity: [0, 100],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
