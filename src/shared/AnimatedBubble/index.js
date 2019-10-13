@@ -50,7 +50,7 @@ class AnimatedBubble extends React.PureComponent {
 
   render() {
     return(
-      <Bubble id={this.props.id} >{this.props.children ? this.props.children : <Ellipses id={this.props.id}/>}</Bubble>
+      <Bubble id={this.props.id} showImage={this.props.showImage}>{this.props.children ? this.props.children : ""}</Bubble>
     );
   }
 }

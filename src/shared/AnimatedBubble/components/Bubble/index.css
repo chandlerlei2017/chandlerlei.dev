@@ -4,6 +4,10 @@
   display: inline-block;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 .bubble h5:last-child {
   margin-bottom: 0rem;
 }

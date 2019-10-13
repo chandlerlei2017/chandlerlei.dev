@@ -419,33 +419,26 @@ class AnimationContainer extends React.PureComponent {
 
     return(
       <>
-      <div className="row mt-5">
-        <div className="col-2 col-sm-1 offset-sm-2" align="right">
-          <Avatar id="avatar" styles={styles} />
-        </div>
-        <div id="animate-container" className="col-10 col-sm-6">
-          <div id="trigger1">
-            <AnimatedBubble id="bubble1">{this.state.firstBubble}</AnimatedBubble>
-          </div>
-          <div id="trigger2">
-            <AnimatedBubble id="bubble2">{this.state.secondBubble}</AnimatedBubble>
-          </div>
-          <div id="trigger3">
-            <AnimatedBubble id="bubble3">{this.state.thirdBubble}</AnimatedBubble>
-          </div>
-          <div id="trigger4">
-            <AnimatedBubble id="bubble4">{this.state.fourthBubble}</AnimatedBubble>
-          </div>
-          <div id="trigger5">
-            <AnimatedBubble id="bubble5">{this.state.fifthBubble}</AnimatedBubble>
-          </div>
-          <div id="trigger6">
-            <AnimatedBubble id="bubble6">{this.state.sixthBubble}</AnimatedBubble>
-          </div>
-          <div id="trigger7">
-            <AnimatedBubble id="bubble7">{this.state.seventhBubble}</AnimatedBubble>
-          </div>
-        </div>
+      <div id="trigger1">
+        <AnimatedBubble id="bubble1">{this.state.firstBubble}</AnimatedBubble>
+      </div>
+      <div id="trigger2">
+        <AnimatedBubble id="bubble2">{this.state.secondBubble}</AnimatedBubble>
+      </div>
+      <div id="trigger3">
+        <AnimatedBubble id="bubble3">{this.state.thirdBubble}</AnimatedBubble>
+      </div>
+      <div id="trigger4">
+        <AnimatedBubble id="bubble4">{this.state.fourthBubble}</AnimatedBubble>
+      </div>
+      <div id="trigger5">
+        <AnimatedBubble id="bubble5">{this.state.fifthBubble}</AnimatedBubble>
+      </div>
+      <div id="trigger6">
+        <AnimatedBubble id="bubble6">{this.state.sixthBubble}</AnimatedBubble>
+      </div>
+      <div id="trigger7">
+        <AnimatedBubble id="bubble7" showImage={true}>{this.state.seventhBubble}</AnimatedBubble>
       </div>
       <div style={{height: "300px"}}/>
       </>
