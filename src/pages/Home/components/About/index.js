@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css'
-import Avatar from '../../../../shared/Avatar/index'
 import AnimationContainer from './components/AnimationContainer/index'
 
 
