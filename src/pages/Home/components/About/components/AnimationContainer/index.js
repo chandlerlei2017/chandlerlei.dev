@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltRight} from '@fortawesome/free-solid-svg-icons'
 import ScrollMagic from 'scrollmagic'
 import anime from 'animejs/lib/anime.es';
+import Avatar from '../../../../../../shared/Avatar/index'
 
 class AnimationContainer extends React.PureComponent {
   constructor(props) {
@@ -363,7 +364,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble6',
           opacity: [100, 0],
-          duration: 500,
+          duration: 200,
           easing: 'easeInOutExpo'
         });
       }
@@ -404,67 +405,50 @@ class AnimationContainer extends React.PureComponent {
     .addTo(this.controller);
 
     // End Animation
-
-    new ScrollMagic.Scene({
-      triggerElement: "#trigger8",
-      duration: 300,
-    })
-    .addTo(this.controller)
-    .on("leave", (event) => {
-      if (event.scrollDirection === "FORWARD") {
-        anime({
-          targets: '#animate-container',
-          opacity: [100, 0],
-          duration: 100,
-          easing: 'easeInOutExpo'
-        });
-      }
-    })
-    .on("enter", (event) => {
-      if (event.scrollDirection === "REVERSE") {
-        anime({
-          targets: '#animate-container',
-          opacity: [0, 100],
-          duration: 100,
-          easing: 'easeInOutExpo'
-        });
-      }
-    });
-
-    let pin7 = new ScrollMagic.Scene({
-      triggerElement: "#trigger8",
-      duration: 0,
-    })
-    .setPin("#trigger7")
-    .addTo(this.controller);
   }
 
   render() {
+    const styles = {
+      height: "56px",
+      width: "56px",
+      position: "absolute",
+      bottom: "0",
+      right: "0",
+      marginBottom: "0.5rem",
+    }
+
     return(
-      <div id="animate-container">
-        <div id="trigger1">
-          <AnimatedBubble id="bubble1">{this.state.firstBubble}</AnimatedBubble>
+      <>
+      <div className="row mt-5">
+        <div className="col-2 col-sm-1 offset-sm-2" align="right">
+          <Avatar styles={styles} />
         </div>
-        <div id="trigger2">
-          <AnimatedBubble id="bubble2">{this.state.secondBubble}</AnimatedBubble>
+        <div id="animate-container" className="col-10 col-sm-6">
+          <div id="trigger1">
+            <AnimatedBubble id="bubble1">{this.state.firstBubble}</AnimatedBubble>
+          </div>
+          <div id="trigger2">
+            <AnimatedBubble id="bubble2">{this.state.secondBubble}</AnimatedBubble>
+          </div>
+          <div id="trigger3">
+            <AnimatedBubble id="bubble3">{this.state.thirdBubble}</AnimatedBubble>
+          </div>
+          <div id="trigger4">
+            <AnimatedBubble id="bubble4">{this.state.fourthBubble}</AnimatedBubble>
+          </div>
+          <div id="trigger5">
+            <AnimatedBubble id="bubble5">{this.state.fifthBubble}</AnimatedBubble>
+          </div>
+          <div id="trigger6">
+            <AnimatedBubble id="bubble6">{this.state.sixthBubble}</AnimatedBubble>
+          </div>
+          <div id="trigger7">
+            <AnimatedBubble id="bubble7">{this.state.seventhBubble}</AnimatedBubble>
+          </div>
         </div>
-        <div id="trigger3">
-          <AnimatedBubble id="bubble3">{this.state.thirdBubble}</AnimatedBubble>
-        </div>
-        <div id="trigger4">
-          <AnimatedBubble id="bubble4">{this.state.fourthBubble}</AnimatedBubble>
-        </div>
-        <div id="trigger5">
-          <AnimatedBubble id="bubble5">{this.state.fifthBubble}</AnimatedBubble>
-        </div>
-        <div id="trigger6">
-          <AnimatedBubble id="bubble6">{this.state.sixthBubble}</AnimatedBubble>
-        </div>
-        <div id="trigger7">
-          <AnimatedBubble id="bubble7">{this.state.seventhBubble}</AnimatedBubble>
-        </div>
-        <div id="trigger8"></div>
       </div>
+      <div style={{height: "300px"}}/>
+      </>
     );
   }
 }
