@@ -364,7 +364,7 @@ class AnimationContainer extends React.PureComponent {
         anime({
           targets: '#bubble6',
           opacity: [100, 0],
-          duration: 200,
+          duration: 100,
           easing: 'easeInOutExpo'
         });
       }
@@ -421,7 +421,7 @@ class AnimationContainer extends React.PureComponent {
       <>
       <div className="row mt-5">
         <div className="col-2 col-sm-1 offset-sm-2" align="right">
-          <Avatar styles={styles} />
+          <Avatar id="avatar" styles={styles} />
         </div>
         <div id="animate-container" className="col-10 col-sm-6">
           <div id="trigger1">
