@@ -21,54 +21,38 @@ class AnimatedBubble extends React.PureComponent {
   }
 
   componentDidMount() {
-    // this.animate();
-
+    const fadeOutTime = 0.7;
+    const fadeInTime = 0.3;
     new ScrollMagic.Scene({
       triggerElement: this.props.trigger,
-      duration: 500,
+      duration: 600,
     })
     .setPin(`#${this.props.id}`)
     .addTo(this.props.controller)
-    .on("leave", (event) => {
-      if (event.scrollDirection === "FORWARD") {
-        this.handleScroll("message",this.props.children);
-        if (this.props.fade) {
-          anime({
-            targets: this.props.fade,
-            opacity: [100, 0],
-            duration: 0,
-            easing: 'easeInOutExpo'
-          });
+    .on("progress", (event) => {
+      // Fade in ellipses
+      let bubble = document.getElementById(this.props.id);
+      if (this.props.fade) var bubbleFade = document.getElementById(this.props.fade);
+
+      if (event.progress < fadeOutTime) {
+        if (this.state.message !== "") this.setState({"message": ""})
+      }
+
+      if (event.progress < fadeInTime) {
+        bubble.style.opacity = event.progress/fadeInTime
+      }
+      else if (event.progress > fadeOutTime) {
+        bubble.style.opacity = (event.progress - fadeOutTime)/fadeInTime;
+        if (bubbleFade) bubbleFade.style.opacity = (1-event.progress)/fadeInTime;
+
+        if (this.state.message === "") {
+          this.setState({"message": this.props.children});
+          bubble.style.opacity = 0;
         }
       }
-      else {
-        anime({
-          targets: `#${this.props.id}`,
-          opacity: [100, 0],
-          duration: 0,
-          easing: 'easeInOutExpo'
-        });
-      }
-    })
-    .on("enter", (event) => {
-      if (event.scrollDirection === "REVERSE") {
-        this.handleScroll("message","");
-        if (this.props.fade) {
-          anime({
-            targets: this.props.fade,
-            opacity: [0, 100],
-            duration: 0,
-            easing: 'easeInOutExpo'
-          });
-        }
-      }
-      else {
-        anime({
-          targets: `#${this.props.id}`,
-          opacity: [0, 100],
-          duration: 0,
-          easing: 'easeInOutExpo'
-        });
+      else if(bubble.style.opacity !== 1){
+        bubble.style.opacity = 1
+        if (bubbleFade) bubbleFade.style.opacity = 1;
       }
     });
 
