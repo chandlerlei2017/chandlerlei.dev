@@ -1,7 +1,6 @@
 import React from 'react';
 import './index.css'
 import Bubble from './components/Bubble/index'
-import anime from 'animejs/lib/anime.es.js'
 import ScrollMagic from 'scrollmagic'
 
 class AnimatedBubble extends React.PureComponent {

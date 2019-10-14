@@ -47,7 +47,8 @@ class Bubble extends React.PureComponent{
     const styles = {
       height: "56px",
       width: "56px",
-      position: "relative",
+      position: "absolute",
+      right: 0,
     }
 
     return (
