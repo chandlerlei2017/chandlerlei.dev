@@ -6,7 +6,7 @@ class ToolsDisplay extends React.PureComponent {
   render() {
     return(
       <div className="row">
-        <div className="tools-card card-shadow p-5 rounded col-sm-8 offset-sm-2">
+        <div className="tools-card card-shadow p-5 rounded col-10 offset-1 col-sm-8 offset-sm-2">
           sdfak <br/>
           sjaodf <br/>
           kjlasdf <br/>
