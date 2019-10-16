@@ -58,6 +58,7 @@ class AnimationContainer extends React.PureComponent {
             Anyway, Here's a bit more about what I do...
           </AnimatedBubble>
         </div>
+        <div className="mb-5"/>
       </>
     );
   }

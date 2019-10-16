@@ -57,7 +57,7 @@ class Bubble extends React.PureComponent{
           <Avatar id="avatar" styles={styles} imageHidden={this.props.showImage !== true && this.props.children !== ""}/>
         </div>
         <div className="col-9 col-sm-7">
-          <div className="bubble pt-3 pb-3 pl-4 pr-4 mb-2">
+          <div className="bubble pt-3 pb-3 pl-4 pr-4 mb-2 card-shadow">
             <h5>{this.props.children === "" ? <Ellipses id={this.props.id}/> : this.props.children}</h5>
           </div>
         </div>

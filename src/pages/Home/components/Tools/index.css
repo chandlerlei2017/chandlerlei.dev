@@ -1,4 +1,11 @@
 .tools {
-  background: linear-gradient(#3C8ECB 70%, rgba(255,255,255,1) 70%);
-  height: 500px;
+  background: linear-gradient(#3C8ECB 80%, rgba(255,255,255,1) 80%);
+}
+
+.center-both {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
