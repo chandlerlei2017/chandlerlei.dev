@@ -1,0 +1,8 @@
+.icon-border {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: 2%;
+  margin-right: 2%
+}

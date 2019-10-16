@@ -30,7 +30,7 @@ class IntroPane extends React.PureComponent {
 
   render() {
     return (
-      <div className="intro" align="center" >
+      <div align="center" >
         <Avatar styles={{ height: "150px", width: "150px" }} />
         <h1 className="mt-5 animate">Chandler Lei - Developer</h1>
         <h2 className="mt-5 mb-5 animate2">
