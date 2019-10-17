@@ -7,10 +7,11 @@ class ToolsView extends React.PureComponent {
 
   render() {
     return (
-      <div className="p-3 tools">
-        <h2>Tools Section</h2>
-        <ToolsSelector/>
+      <div className="p-3 tools text-center">
+        <h2 className="mb-5">Some tools I have used</h2>
+        {/* <ToolsSelector/> */}
         <ToolsDisplay/>
+
       </div>
     );
   }

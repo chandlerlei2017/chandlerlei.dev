@@ -2,5 +2,5 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: linear-gradient(rgba(0,0,0,1) 0%, rgba(32,32,110,1) 70%, #3C8ECB 100%);
+  background: linear-gradient(rgba(0,0,0,1) 0%, rgba(32,32,110,1) 50%, #3C8ECB 85%, #f7f7f7 100%);
 }
