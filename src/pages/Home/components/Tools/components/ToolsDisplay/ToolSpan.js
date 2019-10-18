@@ -10,10 +10,10 @@ const mapDisplay = {
 }
 
 function ToolSpan(props) {
-  return(
+  return (
     <selectedContext.Consumer>
-      {({selected}) => (
-        <span className={`ml-4 mr-4 mb-3 ${!selected || mapDisplay[selected].includes(props.children) ? "" : "faint"}`}>{props.children}</span>
+      {({ selected }) => (
+        <span className={`ml-4 mr-4 mb-3 tool-span ${!selected || mapDisplay[selected].includes(props.children) ? "" : "faint"}`}>{props.children}</span>
       )}
     </selectedContext.Consumer>
   );

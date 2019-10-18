@@ -1,3 +1,7 @@
 .divider {
   width: 100%
 }
+
+.tool-span {
+  transition: opacity 200ms ease-out;
+}

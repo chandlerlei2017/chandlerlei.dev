@@ -20,5 +20,4 @@ body {
 
 .faint {
   opacity: 0.25;
-  transition: opacity 200ms ease-out, border 200ms ease-out;
 }

@@ -10,17 +10,17 @@ import "./index.css";
 
 class HomePage extends React.PureComponent {
 
-  render () {
-    return(
+  render() {
+    return (
       <>
         <div className="intro p-3">
-          <Particle/>
-          <IntroPane/>
-          <AboutView/>
+          <Particle />
+          <IntroPane />
+          <AboutView />
         </div>
-        <ToolsView/>
-        <ExperienceView/>
-        <ProjectsView/>
+        <ToolsView />
+        <ExperienceView />
+        <ProjectsView />
       </>
     );
   }
