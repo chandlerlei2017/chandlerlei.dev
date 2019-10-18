@@ -11,6 +11,82 @@ class AnimationContainer extends React.PureComponent {
 
     this.controller = new ScrollMagic.Controller();
   }
+  componentDidMount() {
+    let pin1 = new ScrollMagic.Scene({
+      triggerElement: "#trigger2",
+      duration: 0,
+    })
+    .setPin("#trigger1")
+    .addTo(this.controller);
+
+    let pin2 = new ScrollMagic.Scene({
+      triggerElement: "#trigger3",
+      duration: 0,
+    })
+    .setPin("#trigger2")
+    .addTo(this.controller);
+
+    let pin3 = new ScrollMagic.Scene({
+      triggerElement: "#trigger4",
+      duration: 0,
+    })
+    .setPin("#trigger3")
+    .addTo(this.controller);
+
+    let pin4 = new ScrollMagic.Scene({
+      triggerElement: "#trigger5",
+      duration: 0,
+    })
+    .setPin("#trigger4")
+    .addTo(this.controller);
+
+    let pin5 = new ScrollMagic.Scene({
+      triggerElement: "#trigger6",
+      duration: 0,
+    })
+    .setPin("#trigger5")
+    .addTo(this.controller);
+
+    let pin6 = new ScrollMagic.Scene({
+      triggerElement: "#trigger7",
+      duration: 0,
+    })
+    .setPin("#trigger6")
+    .addTo(this.controller);
+
+    let pin7 = new ScrollMagic.Scene({
+      triggerElement: "#trigger8",
+      duration: 0,
+    })
+    .setPin("#trigger7")
+    .addTo(this.controller);
+
+    new ScrollMagic.Scene({
+      triggerElement: "#trigger9",
+      duration: 10,
+    })
+    .on("leave", event => {
+      if (event.scrollDirection === "REVERSE") {
+        pin1.setPin("#trigger1");
+        pin2.setPin("#trigger2");
+        pin3.setPin("#trigger3");
+        pin4.setPin("#trigger4");
+        pin5.setPin("#trigger5");
+        pin6.setPin("#trigger6");
+        pin7.setPin("#trigger7");
+      }
+      else {
+        pin1.removePin(true);
+        pin2.removePin(true);
+        pin3.removePin(true);
+        pin4.removePin(true);
+        pin5.removePin(true);
+        pin6.removePin(true);
+        pin7.removePin(true);
+      }
+    })
+    .addTo(this.controller);
+  }
 
   render() {
     return(
@@ -58,7 +134,7 @@ class AnimationContainer extends React.PureComponent {
             Anyway, Here's a bit more about what I do...
           </AnimatedBubble>
         </div>
-        <div className="mb-5"/>
+        <div id="trigger9" className="mb-4"/>
       </>
     );
   }

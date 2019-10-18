@@ -54,15 +54,6 @@ class AnimatedBubble extends React.PureComponent {
         if (bubbleFade) bubbleFade.style.opacity = 1;
       }
     });
-
-    if(this.props.pin) {
-      new ScrollMagic.Scene({
-        triggerElement: this.props.trigger,
-        duration: 0,
-      })
-      .setPin(this.props.pin)
-      .addTo(this.props.controller);
-    }
   }
 
   render() {
