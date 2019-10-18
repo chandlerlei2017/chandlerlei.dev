@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import ToolsSelector from './components/ToolsSelector/index'
 import ToolsDisplay from './components/ToolsDisplay/index'
+import { selectedContext } from './selectedContext'
 
 class ToolsView extends React.PureComponent {
   constructor(props) {
@@ -25,11 +26,11 @@ class ToolsView extends React.PureComponent {
   render() {
     return (
       <div className="p-3 tools text-center">
-        {this.state.selected}
         <h2 className="mb-5">Some tools I have used</h2>
-        <ToolsSelector onSelectorClick={this.onSelectorClick}/>
-        <ToolsDisplay/>
-
+        <selectedContext.Provider value={{selected: this.state.selected, updateSelected: this.onSelectorClick}}>
+          <ToolsSelector/>
+          <ToolsDisplay selected={this.state.selected}/>
+        </selectedContext.Provider>
       </div>
     );
   }
