@@ -6,11 +6,11 @@ function ToolsSelector(props) {
   return(
     <div className="d-flex justify-content-center selector mb-3">
       <selectedContext.Consumer>
-         {({ updateSelected }) => (
+         {({ selected, updateSelected }) => (
            <>
-            <span className="selector-link ml-3 mr-3" onClick={updateSelected}>Front-end</span>
-            <span className="selector-link ml-3 mr-3" onClick={updateSelected}>Back-end</span>
-            <span className="selector-link ml-3 mr-3" onClick={updateSelected}>Other</span>
+            <span className={`selector-link ml-3 mr-3 ${selected !== "" && (selected === "Front-end" ? "selector-link-active": "faint")}`} onClick={updateSelected}>Front-end</span>
+            <span className={`selector-link ml-3 mr-3 ${selected !== "" && (selected === "Back-end" ? "selector-link-active": "faint")}`} onClick={updateSelected}>Back-end</span>
+            <span className={`selector-link ml-3 mr-3 ${selected !== "" && (selected === "Other" ? "selector-link-active": "faint")}`} onClick={updateSelected}>Other</span>
           </>
          )}
       </selectedContext.Consumer>

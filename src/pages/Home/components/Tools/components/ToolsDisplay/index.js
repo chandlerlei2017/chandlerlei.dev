@@ -6,6 +6,7 @@ function ToolsDisplay(props){
   return(
     <div className="row">
       <div className="col-12 offset-sm-1 col-sm-8 offset-sm-2 d-flex flex-wrap justify-content-center">
+        <hr className="divider"/>
         <ToolSpan>Python</ToolSpan>
         <ToolSpan>JavaScript</ToolSpan>
         <ToolSpan>Ruby</ToolSpan>
@@ -34,9 +35,12 @@ function ToolsDisplay(props){
         <ToolSpan>ScrollMagic</ToolSpan>
         <ToolSpan>Chart.js</ToolSpan>
 
-        <ToolSpan>Google Places API</ToolSpan>
-        <ToolSpan>Spotify Web API</ToolSpan>
-        <ToolSpan>Google Gmail API</ToolSpan>
+        <ToolSpan>Places API</ToolSpan>
+        <ToolSpan>Spotify API</ToolSpan>
+        <ToolSpan>Gmail API</ToolSpan>
+
+        <ToolSpan>Docker</ToolSpan>
+        <ToolSpan>Vagrant</ToolSpan>
 
         <ToolSpan>PostgreSQL</ToolSpan>
         <ToolSpan>MySQL</ToolSpan>
