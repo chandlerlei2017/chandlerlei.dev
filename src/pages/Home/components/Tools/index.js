@@ -16,20 +16,20 @@ class ToolsView extends React.PureComponent {
 
   onSelectorClick = event => {
     if (this.state.selected === event.target.innerHTML) {
-      this.setState({selected: ""});
+      this.setState({ selected: "" });
     }
     else {
-      this.setState({selected: event.target.innerHTML});
+      this.setState({ selected: event.target.innerHTML });
     }
   }
 
   render() {
     return (
-      <div className="p-3 tools text-center">
+      <div id="tools-section" className="p-3 tools text-center">
         <h2 className="mb-3">Some tools I have used</h2>
-        <selectedContext.Provider value={{selected: this.state.selected, updateSelected: this.onSelectorClick}}>
-          <ToolsSelector/>
-          <ToolsDisplay selected={this.state.selected}/>
+        <selectedContext.Provider value={{ selected: this.state.selected, updateSelected: this.onSelectorClick }}>
+          <ToolsSelector />
+          <ToolsDisplay selected={this.state.selected} />
         </selectedContext.Provider>
       </div>
     );

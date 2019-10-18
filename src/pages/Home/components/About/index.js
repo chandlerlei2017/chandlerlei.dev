@@ -7,7 +7,7 @@ class AboutView extends React.PureComponent {
 
   render() {
     return (
-      <AnimationContainer/>
+      <AnimationContainer />
     );
   }
 }
