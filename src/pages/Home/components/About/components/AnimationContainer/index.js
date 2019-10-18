@@ -76,13 +76,13 @@ class AnimationContainer extends React.PureComponent {
         pin7.setPin("#trigger7");
       }
       else {
-        pin1.removePin(true);
-        pin2.removePin(true);
-        pin3.removePin(true);
-        pin4.removePin(true);
-        pin5.removePin(true);
-        pin6.removePin(true);
-        pin7.removePin(true);
+        pin1.removePin();
+        pin2.removePin();
+        pin3.removePin();
+        pin4.removePin();
+        pin5.removePin();
+        pin6.removePin();
+        pin7.removePin();
       }
     })
     .addTo(this.controller);
