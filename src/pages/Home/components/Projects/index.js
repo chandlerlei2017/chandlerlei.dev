@@ -7,13 +7,15 @@ class ProjectsView extends React.PureComponent {
     return(
       <div align="center" className="project-section">
         <h2 className="mb-5">My Past Work</h2>
-        <div className="d-flex flex-wrap justify-content-center">
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
+        <div className="col-md-12 col-xxl-8">
+          <div className="row" style={{margin: "0"}}>
+            <ProjectCard/>
+            <ProjectCard/>
+            <ProjectCard/>
+            <ProjectCard/>
+            <ProjectCard/>
+            <ProjectCard/>
+          </div>
         </div>
       </div>
     );

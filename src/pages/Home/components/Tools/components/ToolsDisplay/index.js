@@ -5,7 +5,7 @@ import ToolSpan from './ToolSpan'
 function ToolsDisplay(props){
   return(
     <div className="row">
-      <div className="col-12 offset-sm-1 col-sm-8 offset-sm-2 d-flex flex-wrap justify-content-center">
+      <div className="col-12 offset-md-1 col-md-8 offset-md-2 d-flex flex-wrap justify-content-center">
         <hr className="divider"/>
         <ToolSpan>Python</ToolSpan>
         <ToolSpan>JavaScript</ToolSpan>

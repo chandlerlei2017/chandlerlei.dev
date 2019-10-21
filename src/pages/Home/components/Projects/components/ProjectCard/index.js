@@ -5,8 +5,10 @@ class ProjectCard extends React.PureComponent {
 
   render() {
     return(
-        <div className="rounded project-card m-3" style={{background: "black", width: "100%", maxWidth: "350px", height: "200px"}}>
-          test
+        <div className="col-md-4 mb-3">
+          <div style={{background: "black", height: "200px"}}>
+            test
+          </div>
         </div>
     );
   }
