@@ -9,7 +9,7 @@ class ToolsView extends React.PureComponent {
     super(props);
 
     this.state = {
-      selected: "",
+      selected: "Back-end",
       search: "",
     }
   }
