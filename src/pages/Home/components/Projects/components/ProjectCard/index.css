@@ -1,14 +1,16 @@
 .project-card {
   filter: brightness(80%);
-  transition: filter 200ms ease-out;
+  border-radius: 20px;
+  transition: filter 400ms ease-out;
 }
 
 .project-card:hover {
   filter: brightness(30%);
+  /* background: black; */
 }
 
-.spotify-plays {
-  background: url("../../../../../../images/spotify-plays.png");
+.spotify-tracks {
+  background: url("../../../../../../images/spotify-tracks.png");
   background-size: cover;
   background-position-x: center;
 }
