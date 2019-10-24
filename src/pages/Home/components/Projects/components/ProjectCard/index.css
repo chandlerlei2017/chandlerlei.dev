@@ -1,0 +1,32 @@
+.project-card {
+  filter: brightness(80%);
+  transition: filter 200ms ease-out;
+}
+
+.project-card:hover {
+  filter: brightness(30%);
+}
+
+.spotify-plays {
+  background: url("../../../../../../images/spotify-plays.png");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.uwsublet {
+  background: url("../../../../../../images/uwsublet.png");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.personal-website {
+  background: url("../../../../../../images/personal.png");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.hardware{
+  background: url("../../../../../../images/hardware.jpg");
+  background-size: cover;
+  background-position-x: center;
+}

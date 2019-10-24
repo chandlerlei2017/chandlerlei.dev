@@ -39,7 +39,7 @@ class IntroPane extends React.PureComponent {
           {} Starry, starry night - Paint your palette blue and grey {}
           <FontAwesomeIcon icon={faMusic} />
         </h2>
-        <Link to="tools-section" mdooth={true} duration={1500}>
+        <Link to="tools-section" smooth={true} duration={1500}>
           <FontAwesomeIcon icon={faAngleDown} size="4x" />
         </Link>
       </div>
