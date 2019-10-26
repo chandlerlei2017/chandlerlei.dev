@@ -6,16 +6,12 @@ import Avatar from "../../../../shared/Avatar";
 import secretMission from "../../../../images/secret-mission.png"
 import lendingLoop from "../../../../images/lending-loop.png"
 import bmo from "../../../../images/bmo.png"
+import bdc from "../../../../images/bdc.png"
+import stem from "../../../../images/stem.png"
 
 class ExperienceView extends React.PureComponent {
 
   render() {
-    // const styles = {
-    //   height: "60px",
-    //   width: "60px",
-    //   position: "absolute",
-    //   right: 0,
-    // }
 
     return (
       <div className="experience-section pt-5 text-center">
@@ -32,23 +28,17 @@ class ExperienceView extends React.PureComponent {
             test
           </VerticalTimelineElement>
           <VerticalTimelineElement
+            icon={<Avatar className="responsive-image" image={bdc} />}
+          >
+            test
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
             icon={<Avatar className="responsive-image" image={bmo} />}
           >
             test
           </VerticalTimelineElement>
           <VerticalTimelineElement
-          >
-            test
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-          >
-            test
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-          >
-            test
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
+            icon={<Avatar className="responsive-image" image={stem} />}
           >
             test
           </VerticalTimelineElement>
