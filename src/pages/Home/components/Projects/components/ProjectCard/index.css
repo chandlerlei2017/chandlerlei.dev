@@ -13,6 +13,30 @@
   opacity: 1;
 }
 
+.project-gh {
+  color: white;
+  transition: filter 100ms ease-out;
+}
+
+.project-gh:hover {
+  color: white;
+  filter: drop-shadow(0px 0px 10px white) invert(0%);
+}
+
+a.project-link {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  transition: all 100ms ease-out;
+}
+
+a.project-link:hover {
+  background: white;
+  text: black;
+  filter: drop-shadow(0px 0px 10px white) invert(0%);
+}
+
 .spotify-tracks {
   background: url("../../../../../../images/spotify-tracks.png");
   background-size: cover;

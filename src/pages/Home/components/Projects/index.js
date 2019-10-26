@@ -7,7 +7,7 @@ const projectData = [
     image: "spotify-tracks",
     title: "Spotify Tracks",
     github: "https://github.com/chandlerlei2017/Spotify-Plays",
-    url: "spotify-tracks.com",
+    url: "https://spotifytracks.com",
     description: "A web application that displays and visualizes data for spotify playing history"
   },
   {
@@ -21,7 +21,7 @@ const projectData = [
     image: "personal-website",
     title: "chandlerlei.dev",
     github: "https://github.com/chandlerlei2017/chandlerlei.dev",
-    url: "chandlerlei.dev",
+    url: "https://chandlerlei.dev",
     description: "The website you are on right now! ( Yes... I'm counting this as a project )"
   },
   {
@@ -56,7 +56,7 @@ class ProjectsView extends React.PureComponent {
           <div className="row" style={{margin: "0"}}>
             {projectData.map(project => {
               return (
-                <ProjectCard key={project.image} title={project.title} image={project.image}>
+                <ProjectCard key={project.image} title={project.title} image={project.image} github={project.github} url={project.url}>
                   {project.description}
                 </ProjectCard>
               );

@@ -1,5 +1,7 @@
 import React from 'react';
 import './index.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
 class ProjectCard extends React.PureComponent {
 
@@ -12,7 +14,17 @@ class ProjectCard extends React.PureComponent {
                 <h3 className="mt-3">{this.props.title}</h3>
                 <hr className="project-divider"/>
                 <div className="pl-2 pr-2">
-                  {this.props.children}
+                  <div className="p-0 ml-0 mr-0 mb-3">
+                    {this.props.children}
+                  </div>
+                  <div className="row">
+                    <div className="col-4 text-right">
+                      <a href={this.props.github} rel="noopener noreferrer" target="_blank" className="project-gh"><FontAwesomeIcon icon={faGithubSquare} size="2x"/></a>
+                    </div>
+                    <div className="col-6 text-left">
+                      <a href={this.props.url}  rel="noopener noreferrer" target="_blank" className="btn btn-block project-link">Visit me!</a>
+                    </div>
+                  </div>
                 </div>
             </div>
           </div>
