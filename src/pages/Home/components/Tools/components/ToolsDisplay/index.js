@@ -26,6 +26,7 @@ function ToolsDisplay(props){
         <ToolSpan>Bootstrap</ToolSpan>
         <ToolSpan>Ruby on Rails</ToolSpan>
         <ToolSpan>JQuery</ToolSpan>
+        <ToolSpan>Flask</ToolSpan>
 
         <ToolSpan>RSpec</ToolSpan>
         <ToolSpan>Jest</ToolSpan>
@@ -52,6 +53,7 @@ function ToolsDisplay(props){
         <ToolSpan>SVN</ToolSpan>
         <ToolSpan>CircleCI</ToolSpan>
         <ToolSpan>Postman</ToolSpan>
+        <ToolSpan>cURL</ToolSpan>
 
         <ToolSpan>Salesforce</ToolSpan>
         <ToolSpan>Heroku</ToolSpan>

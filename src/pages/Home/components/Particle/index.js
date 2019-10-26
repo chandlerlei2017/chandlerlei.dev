@@ -66,7 +66,7 @@ const particleParams = {
 };
 
 function Particle() {
-  return <Particles  className="particles" params={particleParams}/>
+  return <Particles className="particles" params={particleParams} />
 }
 
 export default Particle;

@@ -49,11 +49,11 @@ const projectData = [
 
 class ProjectsView extends React.PureComponent {
   render() {
-    return(
+    return (
       <div align="center" className="project-section">
         <h2 className="mb-5">My Past Work</h2>
         <div className="col-md-12 col-xxl-8">
-          <div className="row" style={{margin: "0"}}>
+          <div className="row" style={{ margin: "0" }}>
             {projectData.map(project => {
               return (
                 <ProjectCard key={project.image} title={project.title} image={project.image} github={project.github} url={project.url}>

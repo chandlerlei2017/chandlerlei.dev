@@ -31,17 +31,19 @@ class IntroPane extends React.PureComponent {
 
   render() {
     return (
-      <div className="mt-5" align="center" style={{ position: "relative" }}>
-        <Avatar styles={{ height: "150px", width: "150px" }} />
-        <h1 className="mt-5 animate">Chandler Lei - Developer</h1>
-        <h2 className="mt-5 mb-5 animate2">
-          <FontAwesomeIcon icon={faMusic} />
-          {} Starry, starry night - Paint your palette blue and grey {}
-          <FontAwesomeIcon icon={faMusic} />
-        </h2>
-        <Link to="tools-section" smooth={true} duration={1500}>
-          <FontAwesomeIcon icon={faAngleDown} size="4x" />
-        </Link>
+      <div className="mt-5 intro-pane" align="center">
+        <div className="intro-content">
+          <Avatar styles={{ height: "150px", width: "150px" }} />
+          <h1 className="mt-5 animate">Chandler Lei - Developer</h1>
+          <h2 className="mt-5 mb-5 animate2">
+            <FontAwesomeIcon icon={faMusic} />
+            {} Starry, starry night - Paint your palette blue and grey {}
+            <FontAwesomeIcon icon={faMusic} />
+          </h2>
+          <Link to="tools-section" smooth={true} duration={1500}>
+            <FontAwesomeIcon icon={faAngleDown} size="4x" />
+          </Link>
+        </div>
       </div>
     );
   }

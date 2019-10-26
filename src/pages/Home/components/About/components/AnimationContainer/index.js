@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css'
 import AnimatedBubble from '../../../../../../shared/AnimatedBubble/index'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLongArrowAltRight} from '@fortawesome/free-solid-svg-icons'
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import ScrollMagic from 'scrollmagic'
 
 class AnimationContainer extends React.PureComponent {
@@ -16,80 +16,80 @@ class AnimationContainer extends React.PureComponent {
       triggerElement: "#trigger2",
       duration: 0,
     })
-    .setPin("#trigger1")
-    .addTo(this.controller);
+      .setPin("#trigger1")
+      .addTo(this.controller);
 
     let pin2 = new ScrollMagic.Scene({
       triggerElement: "#trigger3",
       duration: 0,
     })
-    .setPin("#trigger2")
-    .addTo(this.controller);
+      .setPin("#trigger2")
+      .addTo(this.controller);
 
     let pin3 = new ScrollMagic.Scene({
       triggerElement: "#trigger4",
       duration: 0,
     })
-    .setPin("#trigger3")
-    .addTo(this.controller);
+      .setPin("#trigger3")
+      .addTo(this.controller);
 
     let pin4 = new ScrollMagic.Scene({
       triggerElement: "#trigger5",
       duration: 0,
     })
-    .setPin("#trigger4")
-    .addTo(this.controller);
+      .setPin("#trigger4")
+      .addTo(this.controller);
 
     let pin5 = new ScrollMagic.Scene({
       triggerElement: "#trigger6",
       duration: 0,
     })
-    .setPin("#trigger5")
-    .addTo(this.controller);
+      .setPin("#trigger5")
+      .addTo(this.controller);
 
     let pin6 = new ScrollMagic.Scene({
       triggerElement: "#trigger7",
       duration: 0,
     })
-    .setPin("#trigger6")
-    .addTo(this.controller);
+      .setPin("#trigger6")
+      .addTo(this.controller);
 
     let pin7 = new ScrollMagic.Scene({
       triggerElement: "#trigger8",
       duration: 0,
     })
-    .setPin("#trigger7")
-    .addTo(this.controller);
+      .setPin("#trigger7")
+      .addTo(this.controller);
 
     new ScrollMagic.Scene({
       triggerElement: "#trigger9",
       duration: 10,
     })
-    .on("leave", event => {
-      if (event.scrollDirection === "REVERSE") {
-        pin1.setPin("#trigger1");
-        pin2.setPin("#trigger2");
-        pin3.setPin("#trigger3");
-        pin4.setPin("#trigger4");
-        pin5.setPin("#trigger5");
-        pin6.setPin("#trigger6");
-        pin7.setPin("#trigger7");
-      }
-      else {
-        pin1.removePin();
-        pin2.removePin();
-        pin3.removePin();
-        pin4.removePin();
-        pin5.removePin();
-        pin6.removePin();
-        pin7.removePin();
-      }
-    })
-    .addTo(this.controller);
+      .on("leave", event => {
+        if (event.scrollDirection === "REVERSE") {
+          pin1.setPin("#trigger1");
+          pin2.setPin("#trigger2");
+          pin3.setPin("#trigger3");
+          pin4.setPin("#trigger4");
+          pin5.setPin("#trigger5");
+          pin6.setPin("#trigger6");
+          pin7.setPin("#trigger7");
+        }
+        else {
+          pin1.removePin();
+          pin2.removePin();
+          pin3.removePin();
+          pin4.removePin();
+          pin5.removePin();
+          pin6.removePin();
+          pin7.removePin();
+        }
+      })
+      .addTo(this.controller);
   }
 
   render() {
-    return(
+    return (
       <>
         <div id="trigger1">
           <AnimatedBubble id="bubble1" trigger="#trigger1" controller={this.controller}>
@@ -134,7 +134,7 @@ class AnimationContainer extends React.PureComponent {
             Anyway, Here's a bit more about what I do...
           </AnimatedBubble>
         </div>
-        <div id="trigger9" className="mb-4"/>
+        <div id="trigger9" className="mb-4" />
       </>
     );
   }

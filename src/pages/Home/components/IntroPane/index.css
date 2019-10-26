@@ -1,0 +1,10 @@
+.intro-pane {
+  position: relative;
+  height: 100vh;
+  display: table;
+  width: 100%;
+}
+.intro-content {
+  vertical-align: middle;
+  display: table-cell;
+}
