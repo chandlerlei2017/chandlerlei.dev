@@ -19,8 +19,8 @@ class HomePage extends React.PureComponent {
           <AboutView />
         </div>
         <ToolsView />
-        <ProjectsView />
         <ExperienceView />
+        <ProjectsView />
       </>
     );
   }
