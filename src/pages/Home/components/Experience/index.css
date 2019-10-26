@@ -1,6 +1,10 @@
 .experience-section {
-  background: #f7f7f7;
+  background: #7FD1AE;
   color: black;
+}
+
+.experience-section h2 {
+  color: white;
 }
 
 .responsive-image {

@@ -12,7 +12,6 @@ import stem from "../../../../images/stem.png"
 class ExperienceView extends React.PureComponent {
 
   render() {
-
     return (
       <div className="experience-section pt-5 text-center">
         <h2 className="mb-5">My Previous Experience</h2>
@@ -42,8 +41,6 @@ class ExperienceView extends React.PureComponent {
           >
             test
           </VerticalTimelineElement>
-          <VerticalTimelineElement
-          />
         </VerticalTimeline>
       </div>
     );
