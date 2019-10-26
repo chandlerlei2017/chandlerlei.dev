@@ -4,7 +4,7 @@ import Avatar from '../../../../shared/Avatar/index'
 import Ellipses from '../../../Ellipses/index'
 import anime from 'animejs/lib/anime.es.js'
 
-class Bubble extends React.PureComponent{
+class Bubble extends React.PureComponent {
   constructor(props) {
     super(props);
 
@@ -26,24 +26,24 @@ class Bubble extends React.PureComponent{
 
   animate() {
     this.timeline
-    .add({
-      targets: `#${this.props.id}-1`,
-      // opacity: [0, 100],
-      translateY: -10
-    }, 100)
-    .add({
-      targets: `#${this.props.id}-2`,
-      // opacity: [0, 100],
-      translateY: -10
-    }, 200) // relative offset
-    .add({
-      targets: `#${this.props.id}-3`,
-      // opacity: [0, 100],
-      translateY: -10
-    }, 300); // absolute offset
+      .add({
+        targets: `#${this.props.id}-1`,
+        // opacity: [0, 100],
+        translateY: -10
+      }, 100)
+      .add({
+        targets: `#${this.props.id}-2`,
+        // opacity: [0, 100],
+        translateY: -10
+      }, 200) // relative offset
+      .add({
+        targets: `#${this.props.id}-3`,
+        // opacity: [0, 100],
+        translateY: -10
+      }, 300); // absolute offset
   }
 
-  render () {
+  render() {
     const styles = {
       height: "56px",
       width: "56px",
@@ -54,11 +54,11 @@ class Bubble extends React.PureComponent{
     return (
       <div id={this.props.id} className="hidden row">
         <div className="col-3 col-md-1 offset-md-2">
-          <Avatar id="avatar" styles={styles} imageHidden={this.props.showImage !== true && this.props.children !== ""}/>
+          <Avatar id="avatar" styles={styles} className="card-shadow" imageHidden={this.props.showImage !== true && this.props.children !== ""} />
         </div>
         <div className="col-9 col-md-7">
           <div className="bubble pt-3 pb-3 pl-4 pr-4 mb-2 card-shadow">
-            <h5>{this.props.children === "" ? <Ellipses id={this.props.id}/> : this.props.children}</h5>
+            <h5>{this.props.children === "" ? <Ellipses id={this.props.id} /> : this.props.children}</h5>
           </div>
         </div>
       </div>

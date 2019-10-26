@@ -2,3 +2,15 @@
   background: #f7f7f7;
   color: black;
 }
+
+.responsive-image {
+  height: 40px;
+  width: 40px;
+}
+
+@media only screen and (min-width: 1170px) {
+  .responsive-image {
+    height: 60px;
+    width: 60px;
+  }
+}
