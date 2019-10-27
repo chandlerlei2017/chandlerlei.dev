@@ -7,7 +7,7 @@ class ProjectCard extends React.PureComponent {
 
   render() {
     return (
-      <div className="col-md-4 p-3">
+      <div className="col-md-6 col-lg-4 p-3">
         <div className="project-card">
           <div className={`${this.props.image} project-image`} style={{ height: "250px" }} />
           <div className="project-text p-3">

@@ -50,7 +50,7 @@ const projectData = [
 class ProjectsView extends React.PureComponent {
   render() {
     return (
-      <div align="center" className="project-section">
+      <div align="center" className="project-section pt-5">
         <h2 className="mb-5">My Past Work</h2>
         <div className="col-md-12 col-xxl-8">
           <div className="row" style={{ margin: "0" }}>
