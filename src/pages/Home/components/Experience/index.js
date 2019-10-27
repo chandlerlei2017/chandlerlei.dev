@@ -13,31 +13,38 @@ class ExperienceView extends React.PureComponent {
 
   render() {
     return (
-      <div className="experience-section pt-5 text-center">
-        <h2 className="mb-5">My Previous Experience</h2>
+      <div className="experience-section pt-5">
+        <div className="text-center">
+          <h2 className="mb-5">My Previous Experience</h2>
+        </div>
         <VerticalTimeline>
           <VerticalTimelineElement
             icon={<Avatar className="responsive-image" image={secretMission} />}
+            date="Sept 2019 - Present"
           >
             test
           </VerticalTimelineElement>
           <VerticalTimelineElement
             icon={<Avatar className="responsive-image" image={lendingLoop} />}
+            date="Jan 2019 - Apr 2019"
           >
             test
           </VerticalTimelineElement>
           <VerticalTimelineElement
             icon={<Avatar className="responsive-image" image={bdc} />}
+            date="Mar 2019"
           >
             test
           </VerticalTimelineElement>
           <VerticalTimelineElement
             icon={<Avatar className="responsive-image" image={bmo} />}
+            date="May 2018 - Aug 2018"
           >
             test
           </VerticalTimelineElement>
           <VerticalTimelineElement
             icon={<Avatar className="responsive-image" image={stem} />}
+            date="Feb 2017"
           >
             test
           </VerticalTimelineElement>
