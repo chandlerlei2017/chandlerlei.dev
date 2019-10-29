@@ -6,27 +6,3 @@
 .experience-section h2 {
   color: white;
 }
-
-.responsive-image {
-  height: 40px;
-  width: 40px;
-}
-
-@media only screen and (min-width: 1170px) {
-  .responsive-image {
-    height: 60px;
-    width: 60px;
-  }
-}
-
-.vertical-timeline-element-date {
-  color: white;
-}
-
-.transition-3d-hover {
-  transition: all .2s ease-out;
-}
-
-.transition-3d-hover:hover, .transition-3d-hover:focus {
-  transform: translateY(-3px);
-}
