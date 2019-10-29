@@ -28,7 +28,6 @@ class IntroPane extends React.PureComponent {
       }, 600); // absolute offset
   }
 
-
   render() {
     return (
       <div className="intro-pane" align="center">

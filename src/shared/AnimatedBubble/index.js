@@ -26,38 +26,38 @@ class AnimatedBubble extends React.PureComponent {
       triggerElement: this.props.trigger,
       duration: 600,
     })
-    .setPin(`#${this.props.id}`)
-    .addTo(this.props.controller)
-    .on("progress", (event) => {
-      // Fade in ellipses
-      let bubble = document.getElementById(this.props.id);
-      if (this.props.fade) var bubbleFade = document.getElementById(this.props.fade);
+      .setPin(`#${this.props.id}`)
+      .addTo(this.props.controller)
+      .on("progress", (event) => {
+        // Fade in ellipses
+        let bubble = document.getElementById(this.props.id);
+        if (this.props.fade) var bubbleFade = document.getElementById(this.props.fade);
 
-      if (event.progress < fadeOutTime) {
-        if (this.state.message !== "") this.setState({"message": ""})
-      }
-
-      if (event.progress < fadeInTime) {
-        bubble.style.opacity = event.progress/fadeInTime
-      }
-      else if (event.progress > fadeOutTime) {
-        bubble.style.opacity = (event.progress - fadeOutTime)/fadeInTime;
-        if (bubbleFade) bubbleFade.style.opacity = (1-event.progress)/fadeInTime;
-
-        if (this.state.message === "") {
-          this.setState({"message": this.props.children});
-          bubble.style.opacity = 0;
+        if (event.progress < fadeOutTime) {
+          if (this.state.message !== "") this.setState({ "message": "" })
         }
-      }
-      else if(bubble.style.opacity !== 1){
-        bubble.style.opacity = 1
-        if (bubbleFade) bubbleFade.style.opacity = 1;
-      }
-    });
+
+        if (event.progress < fadeInTime) {
+          bubble.style.opacity = event.progress / fadeInTime
+        }
+        else if (event.progress > fadeOutTime) {
+          bubble.style.opacity = (event.progress - fadeOutTime) / fadeInTime;
+          if (bubbleFade) bubbleFade.style.opacity = (1 - event.progress) / fadeInTime;
+
+          if (this.state.message === "") {
+            this.setState({ "message": this.props.children });
+            bubble.style.opacity = 0;
+          }
+        }
+        else if (bubble.style.opacity !== 1) {
+          bubble.style.opacity = 1
+          if (bubbleFade) bubbleFade.style.opacity = 1;
+        }
+      });
   }
 
   render() {
-    return(
+    return (
       <Bubble id={this.props.id} showImage={this.props.showImage}>{this.state.message}</Bubble>
     );
   }

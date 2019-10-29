@@ -2,14 +2,10 @@ import React from 'react';
 import './index.css'
 import AnimationContainer from './components/AnimationContainer/index'
 
-
-class AboutView extends React.PureComponent {
-
-  render() {
-    return (
-      <AnimationContainer />
-    );
-  }
+function AboutView() {
+  return (
+    <AnimationContainer />
+  );
 }
 
 export default AboutView;
