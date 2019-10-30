@@ -3,7 +3,7 @@ import "./index.css"
 
 function Tag(props) {
   return (
-    <div></div>
+    <span className="tag pl-3 pr-3 pt-2 pb-2 mr-2 mb-2">{props.children}</span>
   );
 }
 

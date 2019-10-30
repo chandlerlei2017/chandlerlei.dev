@@ -2,11 +2,11 @@ import React from 'react';
 import './index.css';
 import ToolSpan from './ToolSpan'
 
-function ToolsDisplay(props){
-  return(
+function ToolsDisplay(props) {
+  return (
     <div className="row">
       <div className="col-12 offset-md-1 col-md-8 offset-md-2 d-flex flex-wrap justify-content-center">
-        <hr className="divider"/>
+        <hr className="divider" />
         <ToolSpan>Python</ToolSpan>
         <ToolSpan>JavaScript</ToolSpan>
         <ToolSpan>Ruby</ToolSpan>
@@ -22,6 +22,8 @@ function ToolsDisplay(props){
         <ToolSpan>React</ToolSpan>
         <ToolSpan>Redux</ToolSpan>
         <ToolSpan>React Native</ToolSpan>
+        <ToolSpan>Android NDK</ToolSpan>
+        <ToolSpan>Storybook</ToolSpan>
         <ToolSpan>Django</ToolSpan>
         <ToolSpan>Bootstrap</ToolSpan>
         <ToolSpan>Ruby on Rails</ToolSpan>
@@ -35,6 +37,7 @@ function ToolsDisplay(props){
         <ToolSpan>Anime.js</ToolSpan>
         <ToolSpan>ScrollMagic</ToolSpan>
         <ToolSpan>Chart.js</ToolSpan>
+        <ToolSpan>NumPy</ToolSpan>
 
         <ToolSpan>Places API</ToolSpan>
         <ToolSpan>Spotify API</ToolSpan>
@@ -49,6 +52,7 @@ function ToolsDisplay(props){
         <ToolSpan>Apollo</ToolSpan>
 
         <ToolSpan>Linux</ToolSpan>
+        <ToolSpan>Bash</ToolSpan>
         <ToolSpan>Git</ToolSpan>
         <ToolSpan>SVN</ToolSpan>
         <ToolSpan>CircleCI</ToolSpan>

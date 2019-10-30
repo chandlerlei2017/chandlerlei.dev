@@ -22,3 +22,10 @@
     width: 60px;
   }
 }
+
+.tag {
+  border-radius: 25px;
+  background: #00C6CF;
+  color: white;
+  font-size: 0.9rem;
+}

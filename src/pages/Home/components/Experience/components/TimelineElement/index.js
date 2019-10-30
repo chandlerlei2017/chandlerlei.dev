@@ -14,6 +14,13 @@ function TimelineElement(props) {
       className="transition-3d-hover"
     >
       <h5>{`${data.company} - ${data.title}`}</h5>
+      <div className="d-flex flex-wrap mt-3">
+        {
+          data.keywords && data.keywords.map(keyword => {
+            return <Tag>{keyword}</Tag>
+          })
+        }
+      </div>
     </VerticalTimelineElement>
   )
 }
