@@ -132,7 +132,7 @@ export const experienceData = [
     date: "Jan 2019 - Apr 2019",
     company: "Lending Loop",
     title: "Software Developer Internship",
-    keywords: ["Ruby on Rails", "Bootstrap", "Salesforce", "SendGrid", "Heroku"]
+    keywords: ["Ruby on Rails", "RSpec", "Bootstrap", "Salesforce", "SendGrid", "Heroku"]
   },
   {
     image: bdc,
