@@ -146,7 +146,7 @@ export const experienceData = [
     date: "May 2018 - Aug 2018",
     company: "BMO Financial Group",
     title: "Infrastructure Engineer Internship",
-    keywords: ["Bash", "Datapower", "Bamboo", "Ansible"],
+    keywords: ["Bash", "DataPower", "Bamboo", "Ansible"],
 
   },
   {

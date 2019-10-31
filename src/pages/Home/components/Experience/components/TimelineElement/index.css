@@ -27,5 +27,9 @@
   border-radius: 25px;
   background: #00C6CF;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+.vertical-timeline-element-content {
+  border-top: 5px solid #00C6CF;
 }

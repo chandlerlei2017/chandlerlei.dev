@@ -25,7 +25,7 @@ class ToolsView extends React.PureComponent {
 
   render() {
     return (
-      <div id="tools-section" className="p-3 tools text-center">
+      <div id="tools-section" className="p-3 pb-5 tools text-center">
         <h2 className="mb-5">Some tools I have used</h2>
         <selectedContext.Provider value={{ selected: this.state.selected, updateSelected: this.onSelectorClick }}>
           <ToolsSelector />
