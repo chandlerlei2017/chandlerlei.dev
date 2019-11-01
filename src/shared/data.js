@@ -125,21 +125,29 @@ export const experienceData = [
     date: "Sept 2019 - Present",
     company: "Secret Mission Software",
     title: "Software Developer Internship",
-    keywords: ["Django", "Graphene", "React", "React Native", "Redux", "Apollo", "Bootstrap", "Heroku"]
+    keywords: ["Django", "Graphene", "React", "React Native", "Redux", "Apollo", "Bootstrap", "Heroku"],
+    points: [
+    ],
   },
   {
     image: lendingLoop,
     date: "Jan 2019 - Apr 2019",
     company: "Lending Loop",
     title: "Software Developer Internship",
-    keywords: ["Ruby on Rails", "RSpec", "Bootstrap", "Salesforce", "SendGrid", "Heroku"]
+    keywords: ["Ruby on Rails", "RSpec", "Bootstrap", "Salesforce", "SendGrid", "Heroku"],
+    points: [
+      "Increased user signup completion rate 30% by solely implementing a new signup flow (forms, models, controllers)",
+      "Improved database efficiency by decreasing query times 50% for specific data queries through refactoring of model relationships and data fields",
+      "Enabled automated user emailing using SendGrid, exposed through an REST API endpoint",
+    ],
   },
   {
     image: bdc,
     date: "Mar 2019",
     company: "Business Development Bank of Canada",
-    title: "BDC Hackathon",
-    keywords: ["React", "Flask", "scikit-learn", "AWS", "Android NDK"]
+    title: "BDC Hackathon Winner",
+    keywords: ["React", "Flask", "scikit-learn", "AWS", "Android NDK"],
+    points: [],
   },
   {
     image: bmo,
@@ -147,13 +155,17 @@ export const experienceData = [
     company: "BMO Financial Group",
     title: "Infrastructure Engineer Internship",
     keywords: ["Bash", "DataPower", "Bamboo", "Ansible"],
+    points: [
+      "Increased the functionality of the DataPower system by creating Bash scripts for certificate uploading",
 
+    ],
   },
   {
     image: stem,
     date: "Feb 2017",
     company: "Stem Fellowship",
-    title: "Big Data Challenge",
+    title: "Big Data Challenge Winner",
     keywords: ["NumPy", "R", "JSON"],
+    points: [],
   },
 ]

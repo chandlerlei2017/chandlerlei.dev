@@ -13,8 +13,20 @@ function TimelineElement(props) {
       date={data.date}
       className="transition-3d-hover timelineElement"
     >
-      <h5>{`${data.company} - ${data.title}`}</h5>
-      <div className="d-flex flex-wrap mt-3">
+      <h5 className="mb-3">{`${data.company} - ${data.title}`}</h5>
+      <div className="row">
+        {
+          data.points && data.points.map(point => {
+            return (
+              <>
+                <div className="col-2 text-right pr-0">⚫</div>
+                <div className="col-10"><p className="mt-0 mb-3">{point}</p></div>
+              </>
+            );
+          })
+        }
+      </div>
+      <div className="d-flex flex-wrap">
         {
           data.keywords && data.keywords.map(keyword => {
             return <Tag key={keyword}>{keyword}</Tag>
