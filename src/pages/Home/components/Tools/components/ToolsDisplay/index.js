@@ -50,6 +50,8 @@ function ToolsDisplay(props) {
         <ToolSpan>MySQL</ToolSpan>
         <ToolSpan>Graphene</ToolSpan>
         <ToolSpan>Apollo</ToolSpan>
+        <ToolSpan>Axios</ToolSpan>
+        <ToolSpan>Redis</ToolSpan>
 
         <ToolSpan>Linux</ToolSpan>
         <ToolSpan>Bash</ToolSpan>

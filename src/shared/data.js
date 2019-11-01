@@ -33,20 +33,6 @@ export const projectData = [
     url: "",
     description: "An IOT embedded system that warns bikers of dangerous incoming objects"
   },
-  {
-    image: "1",
-    title: "",
-    github: "",
-    url: "",
-    description: ""
-  },
-  {
-    image: "2",
-    title: "",
-    github: "",
-    url: "",
-    description: ""
-  },
 ]
 
 export const particleParams = {
@@ -113,7 +99,7 @@ export const particleParams = {
 };
 
 export const toolsMap = {
-  "Front-end": ["React", "Redux", "React Native", "Bootstrap", "JQuery", "Anime.js", "ScrollMagic", "Chart.js", "HTML", "CSS", "JavaScript", "Apollo", "Storybook"],
+  "Front-end": ["React", "Redux", "React Native", "Bootstrap", "JQuery", "Anime.js", "ScrollMagic", "Chart.js", "HTML", "CSS", "JavaScript", "Apollo", "Storybook", "Axios", "Redis"],
   "Back-end": ["Python", "Ruby", "Java", "GraphQL", "SQL", "SOQL", "Django", "Ruby on Rails", "PostgreSQL", "MySQL", "Graphene", "Flask", "cURL"],
   "Other": ["C", "C++", "RSpec", "Jest", "unittest", "Linux", "Git", "SVN", "CircleCI", "Postman", "Salesforce", "Heroku", "Netlify", "Docker", "Vagrant", "Android NDK", "Bash", "NumPy"],
   "": []
@@ -127,6 +113,9 @@ export const experienceData = [
     title: "Software Developer Internship",
     keywords: ["Django", "Graphene", "React", "React Native", "Redux", "Apollo", "Bootstrap", "Heroku"],
     points: [
+      "Created Graphene queries and mutations and implemented GraphQL calls and cache updates through Apollo",
+      "Drastically improved functionality of CSV and XML data parser that created and updated Django model instances",
+      "Added redux reducers and actions to update the store and rerender affected components",
     ],
   },
   {
@@ -137,8 +126,9 @@ export const experienceData = [
     keywords: ["Ruby on Rails", "RSpec", "Bootstrap", "Salesforce", "SendGrid", "Heroku"],
     points: [
       "Increased user signup completion rate 30% by solely implementing a new signup flow (forms, models, controllers)",
-      "Improved database efficiency by decreasing query times 50% for specific data queries through refactoring of model relationships and data fields",
+      "Decreased specific data query times by 50% through refactoring of model relationships and data fields",
       "Enabled automated user emailing using SendGrid, exposed through an REST API endpoint",
+      "Increased total test coverage by 8%",
     ],
   },
   {
@@ -146,8 +136,11 @@ export const experienceData = [
     date: "Mar 2019",
     company: "Business Development Bank of Canada",
     title: "BDC Hackathon Winner",
-    keywords: ["React", "Flask", "scikit-learn", "AWS", "Android NDK"],
-    points: [],
+    keywords: ["React", "Flask", "scikit-learn", "AWS", "Axios", "Android NDK", "Redis"],
+    points: [
+      "Designed a sleek React front-end powered by a Flask back-end through Axios",
+      "Cached user browsing history with Redis and provided personalized product suggestions",
+    ],
   },
   {
     image: bmo,
@@ -157,7 +150,7 @@ export const experienceData = [
     keywords: ["Bash", "DataPower", "Bamboo", "Ansible"],
     points: [
       "Increased the functionality of the DataPower system by creating Bash scripts for certificate uploading",
-
+      "Deployed project builds on Bamboo and Ansible, allowing for testing and continuous integration",
     ],
   },
   {
@@ -166,6 +159,10 @@ export const experienceData = [
     company: "Stem Fellowship",
     title: "Big Data Challenge Winner",
     keywords: ["NumPy", "R", "JSON"],
-    points: [],
+    points: [
+      "Filtered and extracted relevant data from 500,000 JSON files through NumPy",
+      "Implemented data visualization by creating tables and graphs using R",
+      "Paper published in the December 2017 edition of the STEM Fellowship Journal",
+    ],
   },
 ]

@@ -19,8 +19,8 @@ function TimelineElement(props) {
           data.points && data.points.map(point => {
             return (
               <>
-                <div className="col-2 text-right pr-0">⚫</div>
-                <div className="col-10"><p className="mt-0 mb-3">{point}</p></div>
+                <div className="col-1 text-right pr-0">⚫</div>
+                <div className="col-11"><p className="mt-0 mb-3">{point}</p></div>
               </>
             );
           })
