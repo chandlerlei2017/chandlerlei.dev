@@ -21,11 +21,41 @@ class IntroPane extends React.PureComponent {
       .add({
         targets: '.animate',
         opacity: [0, 100],
-      }, 400) // relative offset
+      }, 400)
       .add({
         targets: '.animate2',
         opacity: [0, 100],
-      }, 600); // absolute offset
+      }, 600);
+
+    anime({
+      targets: '.music-icon-1',
+      rotate: [15, -15],
+      direction: 'alternate',
+      loop: true,
+      easing: 'cubicBezier(.5, .05, .1, .3)',
+      duration: 400,
+      delay: 100,
+    });
+
+    anime({
+      targets: '.music-icon-2',
+      rotate: [-15, 15],
+      direction: 'alternate',
+      loop: true,
+      easing: 'cubicBezier(.5, .05, .1, .3)',
+      duration: 400,
+      delay: 100,
+    });
+
+    anime({
+      targets: '.arrow-icon',
+      translateY: 25,
+      direction: 'alternate',
+      loop: true,
+      easing: 'cubicBezier(.5, .05, .1, .3)',
+      duration: 600,
+      delay: 200,
+    })
   }
 
   render() {
@@ -35,12 +65,12 @@ class IntroPane extends React.PureComponent {
           <Avatar styles={{ height: "150px", width: "150px" }} />
           <h1 className="mt-5 animate">Chandler Lei - Developer</h1>
           <h2 className="mt-5 mb-5 animate2">
-            <FontAwesomeIcon icon={faMusic} />
+            <FontAwesomeIcon className="music-icon-1" icon={faMusic} />
             {} Starry, starry night - Paint your palette blue and grey {}
-            <FontAwesomeIcon icon={faMusic} />
+            <FontAwesomeIcon className="music-icon-2" icon={faMusic} />
           </h2>
           <Link to="tools-section" smooth={true} duration={1500}>
-            <FontAwesomeIcon icon={faAngleDown} size="4x" />
+            <FontAwesomeIcon className="arrow-icon" icon={faAngleDown} size="4x" />
           </Link>
         </div>
       </div>
