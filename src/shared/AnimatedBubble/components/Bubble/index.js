@@ -3,6 +3,7 @@ import './index.css'
 import Avatar from '../../../../shared/Avatar/index'
 import Ellipses from '../../../Ellipses/index'
 import anime from 'animejs/lib/anime.es.js'
+import avatarImage from '../../../../images/avatar-small.jpg'
 
 class Bubble extends React.PureComponent {
   constructor(props) {
@@ -54,7 +55,7 @@ class Bubble extends React.PureComponent {
     return (
       <div id={this.props.id} className="hidden row">
         <div className="col-3 col-md-1 offset-md-2">
-          <Avatar id="avatar" styles={styles} className="card-shadow" imageHidden={this.props.showImage !== true && this.props.children !== ""} />
+          <Avatar id="avatar" img={avatarImage} styles={styles} className="card-shadow" imageHidden={this.props.showImage !== true && this.props.children !== ""} />
         </div>
         <div className="col-9 col-md-7">
           <div className="bubble pt-3 pb-3 pl-4 pr-4 mb-2 card-shadow">
