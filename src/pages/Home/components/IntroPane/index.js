@@ -7,13 +7,21 @@ import anime from 'animejs/lib/anime.es.js'
 import { Link } from 'react-scroll'
 
 class IntroPane extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loaded: false,
+    }
+  }
+
   componentDidMount() {
-    var tl = anime.timeline({
+    this.timeline = anime.timeline({
       easing: 'easeInOutExpo',
       duration: 1000,
+      autoplay: false,
     });
 
-    tl
+    this.timeline
       .add({
         targets: '.image-cropper',
         opacity: [0, 100],
@@ -58,11 +66,15 @@ class IntroPane extends React.PureComponent {
     })
   }
 
+  componentDidUpdate() {
+    if (this.state.loaded) this.timeline.play();
+  }
+
   render() {
     return (
       <div className="intro-pane">
         <div className="intro-content text-center">
-          <Avatar styles={{ height: "150px", width: "150px" }} />
+          <Avatar onLoad={() => this.setState({ loaded: true })} styles={{ height: "150px", width: "150px" }} />
           <h1 className="mt-5 animate">Chandler Lei - Developer</h1>
           <h2 className="mt-5 mb-5 animate2">
             <FontAwesomeIcon className="music-icon-1" icon={faMusic} />
