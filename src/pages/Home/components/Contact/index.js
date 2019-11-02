@@ -1,8 +1,10 @@
 import React from 'react';
+// import ReactDOM from 'react-dom'
 import './index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelopeSquare, faSave } from '@fortawesome/free-solid-svg-icons'
+import ReactTooltip from 'react-tooltip'
 
 function ContactView() {
   return (
@@ -22,15 +24,16 @@ function ContactView() {
             <a href="https://www.linkedin.com/in/qian-chandler-l-486069137/" className="contact-icon mr-3" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
-            <a href="mailto:q4lei@uwaterloo.ca" className="contact-icon mr-3" rel="noopener noreferrer" target="_blank">
+            <a data-tip="Email: q4lei@edu.uwaterloo.ca" href="mailto:q4lei@uwaterloo.ca" className="contact-icon mr-3" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faEnvelopeSquare} size="2x" />
             </a>
-            <a href="/resume.pdf" className="contact-icon" rel="noopener noreferrer" target="_blank">
+            <a data-tip="Peek my Résumé" href="/resume.pdf" className="contact-icon" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faSave} size="2x" />
             </a>
           </div>
         </div>
       </div>
+      <ReactTooltip />
     </div>
   );
 }
