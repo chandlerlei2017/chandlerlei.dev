@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelopeSquare, faSave } from '@fortawesome/free-solid-svg-icons'
 
 function ContactView() {
   return (
@@ -22,8 +22,11 @@ function ContactView() {
             <a href="https://www.linkedin.com/in/qian-chandler-l-486069137/" className="contact-icon mr-3" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
-            <a href="mailto:q4lei@uwaterloo.ca" className="contact-icon" rel="noopener noreferrer" target="_blank">
+            <a href="mailto:q4lei@uwaterloo.ca" className="contact-icon mr-3" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faEnvelopeSquare} size="2x" />
+            </a>
+            <a href="/resume.pdf" className="contact-icon" rel="noopener noreferrer" target="_blank">
+              <FontAwesomeIcon icon={faSave} size="2x" />
             </a>
           </div>
         </div>
