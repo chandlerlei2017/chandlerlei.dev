@@ -18,10 +18,10 @@ function TimelineElement(props) {
         {
           data.points && data.points.map(point => {
             return (
-              <>
-                <div className="col-1 text-right pr-0">⚫</div>
+              <React.Fragment key={point}>
+                <div className="col-1 text-right pr-0"><span role="img" aria-label="bullet point">⚫</span></div>
                 <div className="col-11"><p className="mt-0 mb-3">{point}</p></div>
-              </>
+              </React.Fragment>
             );
           })
         }

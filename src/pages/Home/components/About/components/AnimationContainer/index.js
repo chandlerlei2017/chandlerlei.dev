@@ -93,7 +93,7 @@ class AnimationContainer extends React.PureComponent {
       <>
         <div id="trigger1">
           <AnimatedBubble id="bubble1" trigger="#trigger1" controller={this.controller}>
-            Hi, I'm Chandler! 👋
+            Hi, I'm Chandler! <span role="img" aria-label="wave">👋</span>
           </AnimatedBubble>
         </div>
         <div id="trigger2">
@@ -116,7 +116,7 @@ class AnimationContainer extends React.PureComponent {
         <div id="trigger5">
           <AnimatedBubble id="bubble5" trigger="#trigger5" controller={this.controller} pin="#trigger4" fade="bubble4">
             <p> <FontAwesomeIcon icon={faLongArrowAltRight} />{' '} I eat hotdogs and fries without any toppings </p>
-            <FontAwesomeIcon icon={faLongArrowAltRight} />{' '} I don't think pineapples belong on pizza, sorry (not sorry) 💁
+            <FontAwesomeIcon icon={faLongArrowAltRight} />{' '} I don't think pineapples belong on pizza, sorry (not sorry) <span role="img" aria-label="shrug">💁</span>
           </AnimatedBubble>
         </div>
         <div id="trigger6">
@@ -126,7 +126,7 @@ class AnimationContainer extends React.PureComponent {
         </div>
         <div id="trigger7">
           <AnimatedBubble id="bubble7" trigger="#trigger7" controller={this.controller} pin="#trigger6" fade="bubble6">
-            And hopefully you don't hate me for my hawaiian pizza comment 😅
+            And hopefully you don't hate me for my hawaiian pizza comment <span role="img" aria-label="nervous">😅</span>
           </AnimatedBubble>
         </div>
         <div id="trigger8">

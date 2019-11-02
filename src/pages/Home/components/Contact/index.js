@@ -12,17 +12,17 @@ function ContactView() {
           <h2 className="center-div">Let's talk!</h2>
         </div>
         <div className="col-lg-4 mb-3">
-          <div className="center-div">Hit me up through one of these platforms</div>
+          <div className="center-div">Hit me up on one of these platforms</div>
         </div>
         <div className="col-lg-4 mb-3">
           <div className="center-div">
-            <a href="https://github.com/chandlerlei2017" className="contact-icon mr-3" target="_blank">
+            <a href="https://github.com/chandlerlei2017" className="contact-icon mr-3" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faGithubSquare} size="2x" />
             </a>
-            <a href="https://www.linkedin.com/in/qian-chandler-l-486069137/" className="contact-icon mr-3" target="_blank">
+            <a href="https://www.linkedin.com/in/qian-chandler-l-486069137/" className="contact-icon mr-3" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
-            <a href="mailto:q4lei@uwaterloo.ca" className="contact-icon" target="_blank">
+            <a href="mailto:q4lei@uwaterloo.ca" className="contact-icon" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faEnvelopeSquare} size="2x" />
             </a>
           </div>
