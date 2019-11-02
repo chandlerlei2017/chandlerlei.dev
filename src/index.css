@@ -16,3 +16,11 @@ body {
 .faint {
   opacity: 0.25;
 }
+
+.center-div {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

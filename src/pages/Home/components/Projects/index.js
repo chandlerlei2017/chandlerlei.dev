@@ -5,7 +5,7 @@ import { projectData } from '../../../../shared/data'
 
 function ProjectsView() {
   return (
-    <div align="center" className="project-section pt-5">
+    <div align="center" className="project-section pt-5 pb-5">
       <h2 className="mb-5">My Past Work</h2>
       <div className="col-md-12 col-xxl-8">
         <div className="row" style={{ margin: "0" }}>

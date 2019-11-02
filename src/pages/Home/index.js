@@ -5,6 +5,7 @@ import AboutView from './components/About/index'
 import ExperienceView from './components/Experience/index'
 import ProjectsView from './components/Projects/index'
 import ToolsView from './components/Tools/index'
+import ContactView from './components/Contact/index'
 
 import "./index.css";
 
@@ -16,9 +17,11 @@ function HomePage() {
         <IntroPane />
         <AboutView />
       </div>
+
       <ToolsView />
       <ExperienceView />
       <ProjectsView />
+      <ContactView />
     </>
   );
 }
