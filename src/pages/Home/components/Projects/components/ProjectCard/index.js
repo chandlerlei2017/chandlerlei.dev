@@ -2,9 +2,26 @@ import React from 'react';
 import './index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import ReactGA from 'react-ga';
 
 function ProjectCard(props) {
   const { image, title, github, url, children } = props;
+
+  const githubClick = (title) => {
+    ReactGA.event({
+      category: "Projects",
+      action: "Github visit",
+      label: title,
+    });
+  }
+
+  const linkClick = (title) => {
+    ReactGA.event({
+      category: "Projects",
+      action: "link visit",
+      label: title,
+    });
+  }
 
   return (
     <div className="col-md-6 col-lg-4 p-3">
@@ -19,10 +36,10 @@ function ProjectCard(props) {
             </div>
             <div className="row">
               <div className="col-4 text-right">
-                <a href={github} rel="noopener noreferrer" target="_blank" className="project-gh"><FontAwesomeIcon icon={faGithubSquare} size="2x" /></a>
+                <a onClick={() => githubClick(title)} href={github} rel="noopener noreferrer" target="_blank" className="project-gh"><FontAwesomeIcon icon={faGithubSquare} size="2x" /></a>
               </div>
               <div className="col-6 text-left">
-                <a href={url} rel="noopener noreferrer" target="_blank" className="btn btn-block project-link">Visit me!</a>
+                <a onClick={() => linkClick(title)} href={url} rel="noopener noreferrer" target="_blank" className="btn btn-block project-link">Visit me!</a>
               </div>
             </div>
           </div>

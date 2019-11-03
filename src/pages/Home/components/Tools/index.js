@@ -3,6 +3,7 @@ import './index.css';
 import ToolsSelector from './components/ToolsSelector/index'
 import ToolsDisplay from './components/ToolsDisplay/index'
 import { selectedContext } from './selectedContext'
+import ReactGA from 'react-ga';
 
 class ToolsView extends React.PureComponent {
   constructor(props) {
@@ -16,9 +17,20 @@ class ToolsView extends React.PureComponent {
 
   onSelectorClick = event => {
     if (this.state.selected === event.target.innerHTML) {
+      ReactGA.event({
+        category: "Tools",
+        action: "Category Reset",
+      });
+
       this.setState({ selected: "" });
     }
     else {
+      ReactGA.event({
+        category: "Tools",
+        action: "Category Change",
+        label: event.target.innerHTML
+      });
+
       this.setState({ selected: event.target.innerHTML });
     }
   }
