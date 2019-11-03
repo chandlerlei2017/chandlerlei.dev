@@ -16,7 +16,7 @@ export const projectData = [
     image: "uwsublet",
     title: "UWSublet",
     github: "https://github.com/chandlerlei2017/sublet",
-    url: "",
+    url: "https://uwsublet.herokuapp.com/",
     description: "A sublet marketplace built for easy filtering and organization of listings"
   },
   {
