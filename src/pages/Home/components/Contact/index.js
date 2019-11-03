@@ -27,7 +27,7 @@ function ContactView() {
             <a data-tip="Email: q4lei@edu.uwaterloo.ca" href="mailto:q4lei@uwaterloo.ca" className="contact-icon mr-3" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faEnvelopeSquare} size="2x" />
             </a>
-            <a data-tip="Peek my Résumé" href="/resume.pdf" className="contact-icon" rel="noopener noreferrer" target="_blank">
+            <a data-tip="Peek my resume" href="/resume.pdf" className="contact-icon" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faSave} size="2x" />
             </a>
           </div>
