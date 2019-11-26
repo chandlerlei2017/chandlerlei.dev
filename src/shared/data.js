@@ -9,7 +9,7 @@ export const projectData = [
     image: "spotify-tracks",
     title: "Spotify Tracks",
     github: "https://github.com/chandlerlei2017/Spotify-Plays",
-    url: "https://spotifytracks.com",
+    url: "https://spothistory.netlify.com/",
     description: "A web application that displays and visualizes data for spotify playing history"
   },
   {
