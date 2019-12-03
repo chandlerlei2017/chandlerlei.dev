@@ -8,6 +8,7 @@ import ToolsView from './components/Tools/index'
 import ContactView from './components/Contact/index'
 import ReactGA from 'react-ga';
 import "./index.css";
+import { isMobile } from 'react-device-detect';
 
 class HomePage extends React.PureComponent {
   componentDidMount() {
@@ -18,7 +19,7 @@ class HomePage extends React.PureComponent {
     return (
       <>
         <div className="intro p-3">
-          <Particle />
+          {!isMobile && <Particle />}
           <IntroPane />
           <AboutView />
         </div>
