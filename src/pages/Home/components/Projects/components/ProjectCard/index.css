@@ -61,6 +61,12 @@ a.project-link:hover {
   background-position-x: center;
 }
 
+.snakeai{
+  background: url("../../../../../../images/snakeai.png");
+  background-size: cover;
+  background-position-x: center;
+}
+
 .project-text {
   color:white;
   opacity: 0;

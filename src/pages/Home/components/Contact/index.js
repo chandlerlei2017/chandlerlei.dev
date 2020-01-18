@@ -53,7 +53,7 @@ function ContactView() {
             <a href="https://www.linkedin.com/in/qian-chandler-l-486069137/" className="contact-icon mr-3" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon onClick={linkedinClick} icon={faLinkedin} size="2x" />
             </a>
-            <a data-tip="Email: q4lei@edu.uwaterloo.ca" href="mailto:q4lei@uwaterloo.ca" className="contact-icon mr-3" rel="noopener noreferrer" target="_blank">
+            <a data-tip="Email: q4lei@uwaterloo.ca" href="mailto:q4lei@uwaterloo.ca" className="contact-icon mr-3" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon onClick={emailClick} icon={faEnvelopeSquare} size="2x" />
             </a>
             <a data-tip="Peek my resume" href="/resume.pdf" className="contact-icon" rel="noopener noreferrer" target="_blank">

@@ -1,6 +1,8 @@
 import React from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import Avatar from "../../../../../../shared/Avatar";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTerminal } from '@fortawesome/free-solid-svg-icons'
 import Tag from "./Tag"
 import "./index.css";
 
@@ -19,7 +21,7 @@ function TimelineElement(props) {
           data.points && data.points.map(point => {
             return (
               <React.Fragment key={point}>
-                <div className="col-1 text-right pr-0"><span role="img" aria-label="bullet point">⚫</span></div>
+                <div className="col-1 text-right pr-0"><FontAwesomeIcon icon={faTerminal} size="sm" /></div>
                 <div className="col-11"><p className="mt-0 mb-3">{point}</p></div>
               </React.Fragment>
             );
