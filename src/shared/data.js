@@ -20,7 +20,7 @@ export const projectData = [
     description: "A sublet marketplace built for easy filtering and organization of listings"
   },
   {
-    image: "SnakeAi",
+    image: "snakeai",
     title: "SnakeAi",
     github: "https://github.com/chandlerlei2017/snakeai",
     url: "https://github.com/chandlerlei2017/snakeai",
