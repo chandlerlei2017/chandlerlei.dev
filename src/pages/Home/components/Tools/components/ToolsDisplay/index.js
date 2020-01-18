@@ -20,6 +20,7 @@ function ToolsDisplay(props) {
         <ToolSpan>CSS</ToolSpan>
 
         <ToolSpan>React</ToolSpan>
+        <ToolSpan>Gatsby</ToolSpan>
         <ToolSpan>Redux</ToolSpan>
         <ToolSpan>React Native</ToolSpan>
         <ToolSpan>Android NDK</ToolSpan>
@@ -38,6 +39,8 @@ function ToolsDisplay(props) {
         <ToolSpan>ScrollMagic</ToolSpan>
         <ToolSpan>Chart.js</ToolSpan>
         <ToolSpan>NumPy</ToolSpan>
+        <ToolSpan>TensorFlow</ToolSpan>
+        <ToolSpan>Keras</ToolSpan>
 
         <ToolSpan>Places API</ToolSpan>
         <ToolSpan>Spotify API</ToolSpan>
@@ -64,6 +67,7 @@ function ToolsDisplay(props) {
         <ToolSpan>Salesforce</ToolSpan>
         <ToolSpan>Heroku</ToolSpan>
         <ToolSpan>Netlify</ToolSpan>
+        <ToolSpan>Algolia</ToolSpan>
       </div>
     </div>
   )

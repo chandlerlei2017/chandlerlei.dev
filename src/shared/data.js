@@ -20,6 +20,13 @@ export const projectData = [
     description: "A sublet marketplace built for easy filtering and organization of listings"
   },
   {
+    image: "SnakeAi",
+    title: "SnakeAi",
+    github: "https://github.com/chandlerlei2017/snakeai",
+    url: "https://github.com/chandlerlei2017/snakeai",
+    description: "Classic snake game controlled by a neural network and optimized through Genetic Algorithm"
+  },
+  {
     image: "personal-website",
     title: "chandlerlei.dev",
     github: "https://github.com/chandlerlei2017/chandlerlei.dev",
@@ -29,8 +36,8 @@ export const projectData = [
   {
     image: "hardware",
     title: "Bike Safe",
-    github: "",
-    url: "",
+    github: "https://github.com/chandlerlei2017/Bike-Safe",
+    url: "https://github.com/chandlerlei2017/Bike-Safe",
     description: "An IOT embedded system that warns bikers of dangerous incoming objects"
   },
 ]
@@ -99,9 +106,9 @@ export const particleParams = {
 };
 
 export const toolsMap = {
-  "Front-end": ["React", "Redux", "React Native", "Bootstrap", "JQuery", "Anime.js", "ScrollMagic", "Chart.js", "HTML", "CSS", "JavaScript", "Apollo", "Storybook", "Axios", "Redis"],
+  "Front-end": ["React", "Gatsby", "Redux", "React Native", "Bootstrap", "JQuery", "Anime.js", "ScrollMagic", "Chart.js", "HTML", "CSS", "JavaScript", "Apollo", "Storybook", "Axios", "Redis"],
   "Back-end": ["Python", "Ruby", "Java", "GraphQL", "SQL", "SOQL", "Django", "Ruby on Rails", "PostgreSQL", "MySQL", "Graphene", "Flask", "cURL"],
-  "Other": ["C", "C++", "RSpec", "Jest", "unittest", "Linux", "Git", "SVN", "CircleCI", "Postman", "Salesforce", "Heroku", "Netlify", "Docker", "Vagrant", "Android NDK", "Bash", "NumPy"],
+  "Other": ["C", "C++", "RSpec", "Jest", "unittest", "Linux", "Git", "SVN", "CircleCI", "Postman", "Salesforce", "Heroku", "Netlify", "Docker", "Vagrant", "Android NDK", "Bash", "NumPy", "TensorFlow", "Algolia", "Keras"],
   "": []
 }
 
@@ -113,9 +120,10 @@ export const experienceData = [
     title: "Software Developer Internship",
     keywords: ["Django", "Graphene", "React", "React Native", "Redux", "Apollo", "Bootstrap", "Heroku"],
     points: [
-      "Created Graphene queries and mutations and implemented GraphQL calls and cache updates through Apollo",
-      "Drastically improved functionality of CSV and XML data parser that created and updated Django model instances",
-      "Added redux reducers and actions to update the store and rerender affected components",
+      "Introduced and migrated REST API Backend to an Graphene (GraphQL) layer, reducing total backend API request load by 50%",
+      "Enhanced functionality of CSV/XML data parser, adding new features and reducing bug reports by 90%",
+      "Created a robust Gatsby theme/static-site generator, replacing clients' user-facing product sites, reducing load times by 95%",
+      "Devised an API ENV switcher for React Native App, boosting dev efficiency",
     ],
   },
   {
@@ -125,7 +133,7 @@ export const experienceData = [
     title: "Software Developer Internship",
     keywords: ["Ruby on Rails", "RSpec", "Bootstrap", "Salesforce", "SendGrid", "Heroku"],
     points: [
-      "Increased user signup completion rate 30% by solely implementing a new signup flow (forms, models, controllers)",
+      "Increased user signup completion rate 150% by solely implementing a new signup flow (forms, models, controllers)",
       "Decreased specific data query times by 50% through refactoring of model relationships and data fields",
       "Enabled automated user emailing using SendGrid, exposed through an REST API endpoint",
       "Increased total test coverage by 8%",
